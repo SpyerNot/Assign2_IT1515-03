@@ -9,6 +9,10 @@ header{
     height: 60px;
 }
 
+nav{
+    margin-left: auto;
+}
+
 nav ul{
     list-style: none;
     display: flex;
