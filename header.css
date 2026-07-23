@@ -3,6 +3,17 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    background: rgba(10,12,20,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid;
+}
+
+body{
+    background-color: rgba(0,0,0,0.7);
+    background-image:
+    radial-gradient(circle at 15% 10%, rgba(124,92,255,0.10), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(43,243,214,0.08), transparent 40%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px);
 }
 
 .logo img{
@@ -26,6 +37,6 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
 }
