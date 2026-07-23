@@ -1,38 +1,43 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(10,12,20,0.85);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid;
-}
-
 body{
-    background-color: rgba(0,0,0,0.7);
-    background-image:
-    radial-gradient(circle at 15% 10%, rgba(124,92,255,0.10), transparent 40%),
-    radial-gradient(circle at 85% 30%, rgba(43,243,214,0.08), transparent 40%),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
-.logo img{
-    height: 60px;
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(images/bkg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 85px;
+    height: auto;
+    padding-left: 5px;
+    border-radius: 10px;
 }
 
 nav{
-    margin-left: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
 nav ul{
     list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
 }
 
 nav ul li{
-    margin-left: 30px;
+    display: inline-block;
+    margin: 10px 20px;
 }
 
 nav ul li a{

@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="header.css"/>
+    <link rel="stylesheet" type="text/css" href="homepage.css"/>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
+    <!-- using header.css to style -->
+    <div class="container">
         <nav>
+            <a href="homepage.html">
+                <img src="images/logo.png" class="logo" alt="Logo">
+            </a>
             <ul>
-                <li><a href="homepage.html">Home</li>
-                <li><a href="#">ML</li>
-                <li><a href="#">HOK</li>
-                <li><a href="#">Contact Us</li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="ml.html">Mobile Legend</a></li>
+                <li><a href="hok.html">Honor of King</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
-    </header>
+
+        <!-- using homepage.css to style -->
+        <div class="content">
+            <h1>Welcome<br>to our Website</h1>
+            <p>Welcome to your hub for tips, guides,and stories about 5v5 mobile gaming.</p>
+            <a href="contact.html" class="btn">Contact us</a>
+        </div>
+        <section class="info-sections">
+            <div class="info-block">
+                <div class="info-image">
+                    <img src="images/HonorOfKing.jpg" alt="honor of king">
+                </div>
+                <div class="info-text">
+                    <h2>Honor of King</h2>
+                    <p>Honor of Kings is the world's most-played mobile MOBA, offering fast 5v5 battles, a huge roster of legendary heroes, and a thriving esports scene. It was first released in China in 2015 and launched globally in June 2024, quickly becoming the highest-grossing mobile game worldwide</p>
+                    <a href="hok.html" class="btn">Explore more</a>
+                </div>
+            </div>
+
+            <div class="info-block reverse">
+                <div class="info-text">
+                    <h2>Section Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="info-image">
+                    <img src="images/section-img2.jpg" alt="Section image">
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
