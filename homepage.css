@@ -85,3 +85,46 @@
     line-height: 1.6;
     color: #d0d0d0;
 }
+
+.compare-section{
+    padding: 60px 8%;
+    background-color: transparent;
+}
+
+.compare-title{
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.compare-table{
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    background-color: rgba(20, 20, 43, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.compare-table th,
+.compare-table td{
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.compare-table th{
+    background-color: midnightblue;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.compare-table tbody tr:hover{
+    background-color: rgba(255,255,255,0.05);
+    transition: background-color 0.2s ease;
+}
+
+.compare-table tbody tr:last-child td{
+    border-bottom: none;
+}
