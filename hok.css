@@ -14,6 +14,40 @@
     min-width: 100%;
     min-height: 100%;
     transform: translate(-50%, -50%);
-    pointer-events: none;
+    object-fit: cover;
     border: none;
 }
+
+.carousel__item:nth-child(3),
+.carousel__item:nth-child(7) { flex: 0 0 10px; }
+
+.carousel__item:nth-child(2),
+.carousel__item:nth-child(8) { flex: 0 0 5px; transform: translateX(-50px); }
+
+.carousel__item:nth-child(8) { transform: translateX(50px); }
+
+.carousel__item:nth-child( 1 ),
+.carousel__item:nth-child( n + 9 ) { flex: 0 0 0px; margin: 0; box-shadow: none; opacity: 0!important; }
+
+.carousel__item:not(:nth-child( n + 5 )) img,
+.carousel__item:nth-child( n + 7 ) img { opacity: 0.8; }
+
+.carousel__item:not(:nth-child( n + 4 )) *,
+.carousel__item:nth-child( n + 7 ) * { opacity: 0!important; }
+
+.carousel__item:nth-child(3),
+.carousel__item:nth-child(10) { flex: 0 0 10px; }
+
+.carousel__item:nth-child(2),
+.carousel__item:nth-child(11) { flex: 0 0 5px; transform: translateX(-50px); }
+
+.carousel__item:nth-child(11) { transform: translateX(50px); }
+
+.carousel__item:nth-child( 1 ),
+.carousel__item:nth-child( n + 12 ) { flex: 0 0 0px; margin: 0; box-shadow: none; opacity: 0!important; }
+
+.carousel__item:not(:nth-child( n + 5 )) img,
+.carousel__item:nth-child( n + 9 ) img { opacity: 0.8; }
+
+.carousel__item:not(:nth-child( n + 4 )) *,
+.carousel__item:nth-child( n + 10 ) * { opacity: 0!important; }
