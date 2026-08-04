@@ -18,46 +18,41 @@
     border: none;
 }
 
-.info-sections{
+/* css to style info for Why I love Hok */
+.info-sections {
     background-color: rgba(20, 20, 43, 0.8);
-    padding: 60px 8%;
+    padding: 70px 8%;
 }
 
-.info-block{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    margin-bottom: 60px;
+.info-block {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.info-block:last-child{
-    margin-bottom: 0;
+.info-text {
+    color: white;
+    margin-bottom: 35px;
 }
 
-.info-image{
-    flex: 1;
+.info-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
 }
 
-.info-image img{
-    width: 80%;
+.info-text p {
+    max-width: 850px;
+    margin: 0 auto 15px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #d0d0d0;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 900px;
     height: auto;
     display: block;
-    border-radius: 4px;
-}
-
-.info-text{
-    flex: 1;
-    color: white;
-}
-
-.info-text h2{
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.info-text p{
-    font-size: 1em;
-    line-height: 1.6;
-    color: #d0d0d0;
+    margin: 0 auto;
+    border-radius: 10px;
 }
