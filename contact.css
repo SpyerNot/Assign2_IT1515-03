@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0b0b23;
+
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* entire page */
+
+.team{
+
+    width:95%;
+
+    margin:40px auto;
+
+}
+
+/* profile cards */
+
+.card{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    border:1px solid #6f3cff;
+
+    background:#101028;
+
+    min-height:250px;
+
+}
+
+/* alternate card */
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+.profile{
+
+    width:170px;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.info{
+
+    padding:35px;
+
+    flex:1;
+
+}
+
+.tag{
+
+    border:1px solid #6f3cff;
+
+    color:#a98cff;
+
+    padding:5px 12px;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+}
+
+.info h2{
+
+    margin-top:15px;
+
+    font-size:34px;
+
+    font-family:'Orbitron',sans-serif;
+
+}
+
+.info p{
+
+    color:#c7c7d9;
+
+    margin-top:18px;
+
+    line-height:1.8;
+
+    max-width:500px;
+
+}
+
+.email{
+
+    color:#9d85ff;
+
+    margin-top:25px;
+
+}
+
+.social{
+
+    margin-top:25px;
+
+}
+
+.social a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #6f3cff;
+
+    padding:8px 14px;
+
+    margin-right:10px;
+
+    font-size:12px;
+
+    transition:.3s;
+
+}
+
+.social a:hover{
+
+    background:#6f3cff;
+
+}
+
+/* Contact Form */
+
+.contact{
+
+    width:95%;
+
+    margin:40px auto;
+
+    border:1px solid #6f3cff;
+
+    padding:40px;
+
+    background:#101028;
+
+}
+
+.contact h5{
+
+    color:#9d85ff;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.contact h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    margin-bottom:35px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    color:#ccc;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#0b0b23;
+
+    border:1px solid #6f3cff;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    resize:none;
+
+    background:#0b0b23;
+
+    border:1px solid #6f3cff;
+
+    color:white;
+
+}
+
+button{
+
+    float:right;
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    background:#6f3cff;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#8858ff;
+
+    transform:translateY(-3px);
+
+}
