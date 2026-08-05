@@ -7,7 +7,7 @@ body{
 
 .container{
     width:100%;
-    min-height:100vh;
+    padding-bottom:50px;
     background-image:linear-gradient(rgba(9,0,77,.65),rgba(9,0,77,.65)),url(bkg.jpg);
     background-size:cover;
     background-position:center;
