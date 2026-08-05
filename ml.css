@@ -14,21 +14,8 @@ header{
     background-position:center;
 
 }
-.hero{
 
-    height:85vh;
 
-    display:flex;
-
-    align-items:center;
-
-}
-
-.hero-text{
-
-    margin-left:80px;
-
-}
 .hero h1{
 
     font-size:120px;
@@ -60,7 +47,7 @@ header{
 
     margin-right:20px;
 
-    background:#cba85a;
+    background:midnightblue;
 
     color:white;
 
@@ -71,18 +58,25 @@ header{
     cursor:pointer;
 
 }
+
 .hero{
-
+    position:relative;
+    height:85vh;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
+    width:90%;
+    margin:auto;
 }
 
 .hero-image{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
 
+.hero-image img{
     width:650px;
-
+    transform:translateY(40px);
 }
