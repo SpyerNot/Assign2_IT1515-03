@@ -29,24 +29,24 @@
             <section class="info-sections">
                 <div class="info-block">
                     <div class="info-text">
-                        <h2>Why I Love HoK</h2>
+                        <h2>What is Honor of Kings?</h2>
                         <p>
-                            I’ve been playing Honor of Kings since Primary 5,
-                            and it’s been
-                            one of my favourite ways to relax and connect with
-                            friends.
-                            Every 5v5 match feels different, pushing me to think
-                            fast, make
-                            smart decisions, and work closely with my teammates.
+                            Honor of Kings is a multiplayer online battle arena
+                            game where two
+                            teams of five players compete against each other.
+                            Each player selects
+                            a hero with unique abilities and works together with
+                            teammates to
+                            destroy the enemy's towers and crystal.
                         </p>
                         <p>
-                            Over time, it has helped me improve my teamwork,
-                            communication,
-                            and decision-making skills while keeping the fun
-                            alive. I also
-                            enjoy the creative hero skins because they make each
-                            character
-                            feel unique and add more excitement to the game.
+                            The game combines action, strategy, communication,
+                            and teamwork.
+                            Players can choose different roles depending on
+                            their preferred
+                            playstyle, such as dealing damage, protecting
+                            teammates, or controlling
+                            important objectives.
                         </p>
                     </div>
                     <div class="info-image">
@@ -54,18 +54,123 @@
                             alt="Honor of Kings gameplay">
                     </div>
                 </div>
-                <div class="carousel">
-                    <div class="group">
-                        <div class="card">1</div>
-                        <div class="card">2</div>
-                        <div class="card">3</div>
-                        <div class="card">4</div>
-                        <div class="card">5</div>
-                        <div class="card">6</div>
+                <section class="roles-section">
+                    <div class="roles-heading">
+                        <p>Find your playstyle</p>
+                        <h2>Choose Your Role</h2>
                     </div>
-               </div>
+                    <div class="swiper role-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide role-slide">
+                                <img src="clash-lane.jpg" alt="Clash Lane">
+                                <div class="role-content">
+                                    <span>01</span>
+                                    <h3>Clash Lane</h3>
+                                    <p>
+                                        Strong fighters who survive long battles
+                                        and challenge
+                                        enemies in one-versus-one fights.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide role-slide">
+                                <img src="jungle.jpg" alt="Jungle">
+                                <div class="role-content">
+                                    <span>02</span>
+                                    <h3>Jungle</h3>
+                                    <p>
+                                        Moves around the map, defeats jungle
+                                        monsters, helps
+                                        teammates, and controls important
+                                        objectives.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide role-slide">
+                                <img src="mid-lane.jpg" alt="Mid Lane">
+                                <div class="role-content">
+                                    <span>03</span>
+                                    <h3>Mid Lane</h3>
+                                    <p>
+                                        Mages deal powerful burst damage and
+                                        rotate around the
+                                        battlefield to support other lanes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide role-slide">
+                                <img src="farm-lane.jpg" alt="Farm Lane">
+                                <div class="role-content">
+                                    <span>04</span>
+                                    <h3>Farm Lane</h3>
+                                    <p>
+                                        Marksmen collect gold and equipment
+                                        before becoming
+                                        powerful late-game damage dealers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide role-slide">
+                                <img src="roamer.jpg" alt="Roamer">
+                                <div class="role-content">
+                                    <span>05</span>
+                                    <h3>Roamer</h3>
+                                    <p>
+                                        Protects teammates, starts team fights,
+                                        provides vision,
+                                        and supports different areas of the map.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
             </section>
-            
         </div>
+        <script>
+        const roleSwiper = new Swiper(".role-swiper", {
+            loop: true,
+            centeredSlides: true,
+            grabCursor: true,
+            keyboard: {
+                enabled: true
+            },
+            
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.15,
+                    spaceBetween: 16
+                },
+
+                600: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 22
+                },
+
+                900: {
+                    slidesPerView: 2.6,
+                    spaceBetween: 28
+                },
+
+                1200: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 32
+                }
+            }
+        });
+        </script>
     </body>
 </html>
