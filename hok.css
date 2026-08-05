@@ -56,3 +56,26 @@
     margin: 0 auto;
     border-radius: 10px;
 }
+
+/* slider carousell*/
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid #6f3cff;
+    display: flex;
+}
+
+.group {
+    display: flex;
+    
+}
+
+.card {
+    height: 5em;
+    padding: 1em;
+    background-color: #101028;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
