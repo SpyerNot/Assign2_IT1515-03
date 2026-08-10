@@ -33,14 +33,10 @@
 .role-quiz {
     width: 100%;
     max-width: 750px;
-
     padding: 40px;
-
     background-color: #101028;
-
     border: 1px solid rgba(121, 87, 232, 0.5);
     border-radius: 15px;
-
     color: white;
 }
 
@@ -60,7 +56,6 @@
     border: none;
     height: 1px;
     background-color: #45455f;
-
     margin-bottom: 30px;
 }
 
@@ -77,27 +72,20 @@
 
 .role-option {
     width: 100%;
-
     padding: 17px 20px;
-
     background-color: #18183a;
     color: #d8d8e3;
-
     border: 1px solid #45455f;
     border-radius: 7px;
-
     text-align: left;
     font-size: 1rem;
-
     cursor: pointer;
-
     transition: 0.25s;
 }
 
 .role-option:hover {
     background-color: #242452;
     border-color: #7957e8;
-
     transform: translateX(5px);
 }
 
@@ -111,15 +99,11 @@
 
 .role-result {
     display: none;
-
     margin-top: 30px;
     padding: 25px;
-
     background-color: rgba(121, 87, 232, 0.12);
-
     border: 1px solid #7957e8;
     border-radius: 10px;
-
     text-align: center;
 }
 
@@ -188,9 +172,7 @@
 
 .hero-card:hover {
     transform: translateY(-8px);
-
     border-color: #7957e8;
-
     box-shadow:
         0 15px 35px rgba(121, 87, 232, 0.25);
 }
@@ -201,7 +183,6 @@
 
     object-fit: cover;
     object-position: top;
-
     display: block;
 }
 
@@ -212,13 +193,11 @@
 .hero-info h3 {
     color: white;
     font-size: 1.5rem;
-
     margin-bottom: 10px;
 }
 
 .hero-info p {
     color: #c7c7d3;
-
     font-size: 0.95rem;
     line-height: 1.6;
 }
@@ -228,39 +207,29 @@
 
 .role-buttons {
     max-width: 1200px;
-
     margin: 40px auto 0;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
     gap: 10px;
 }
 
 .role-buttons button {
     padding: 15px;
-
     background-color: #101028;
     color: white;
-
     border: 1px solid #45455f;
-
     cursor: pointer;
-
     font-size: 0.95rem;
-
     transition: 0.3s ease;
 }
 
 .role-buttons button:hover {
     background-color: #242452;
-
     border-color: #7957e8;
 }
 
 .role-buttons button.active {
     background-color: #7957e8;
-
     border-color: #9c7cff;
 }
 
@@ -268,7 +237,7 @@
 
 .battlefield-section {
     padding: 100px 8%;
-    background-color: rgba(8, 8, 22, 0.9);
+    background-color: rgba(20, 20, 43, 0.8);
 }
 
 .battlefield-heading {
@@ -298,17 +267,14 @@
 .battlefield-container {
     max-width: 1200px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-
     gap: 50px;
     align-items: center;
 }
 
 .battlefield-map {
     overflow: hidden;
-
     border: 1px solid rgba(121, 87, 232, 0.4);
     border-radius: 15px;
 }
@@ -324,7 +290,6 @@
 
 .battlefield-info > span {
     color: #9c7cff;
-
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -332,53 +297,38 @@
 
 .battlefield-info h3 {
     color: white;
-
     font-size: 2rem;
-
     margin: 10px 0 15px;
 }
 
 .battlefield-info > p {
     color: #c7c7d3;
-
     line-height: 1.7;
-
     margin-bottom: 25px;
 }
 
 .map-tip {
     padding: 18px;
-
     background-color: rgba(121, 87, 232, 0.12);
-
     border-left: 3px solid #7957e8;
-
     color: #d8d8e3;
-
     line-height: 1.5;
 }
 
 .map-buttons {
     max-width: 1200px;
-
     margin: 40px auto 0;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
     gap: 10px;
 }
 
 .map-buttons button {
     padding: 15px 10px;
-
     background-color: #101028;
     color: white;
-
     border: 1px solid #45455f;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -390,4 +340,81 @@
 .map-buttons button.active {
     background-color: #7957e8;
     border-color: #9c7cff;
+}
+
+/* style tips section */
+.tips-section {
+    padding: 100px 8%;
+    background-color: rgba(20, 20, 43, 0.8);
+}
+
+.tips-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.tips-heading span {
+    color: #9c7cff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.tips-heading h2 {
+    color: white;
+    font-size: 2.8rem;
+    margin: 10px 0 15px;
+}
+
+.tips-heading p {
+    color: #c7c7d3;
+    line-height: 1.7;
+}
+
+.match-tips-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.match-tip-card {
+    padding: 35px 30px;
+    background-color: #101028;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.match-tip-card:hover {
+    transform: translateY(-7px);
+    border-color: #7957e8;
+    box-shadow: 0 15px 35px rgba(121, 87, 232, 0.2);
+}
+
+.match-tip-icon {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.match-tip-card > span {
+    color: #7957e8;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.match-tip-card h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 8px 0 12px;
+}
+
+.match-tip-card p {
+    color: #bcbcc8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
 }

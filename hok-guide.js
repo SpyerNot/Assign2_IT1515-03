@@ -278,8 +278,8 @@ const mapInformation = {
             "fights early in the game."
     },
 
-    objective: {
-        label: "OBJECTIVES",
+    roamer: {
+        label: "ROAMER",
         title: "More Important Than Kills",
         description:
             "Important neutral objectives can give your team useful " +
