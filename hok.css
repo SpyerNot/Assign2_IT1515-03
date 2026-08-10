@@ -190,3 +190,47 @@
     background-color: #8b63ff;
     opacity: 1;
 }
+
+/* rank */
+.rank-section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.rank-image {
+    flex: 1.2;
+}
+
+.rank-image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.rank-info {
+    flex: 1;
+    color: white;
+}
+
+.rank-info span {
+    color: #9c7cff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.rank-info h2 {
+    font-size: 2.8rem;
+    margin: 10px 0 20px;
+}
+
+.rank-info p {
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
