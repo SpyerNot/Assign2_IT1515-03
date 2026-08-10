@@ -84,21 +84,21 @@ const heroRecommendations = {
     clash: [
         {
             name: "Arthur",
-            image: "images/arthur.jpg",
+            image: "image/arthur.jpg",
             description:
                 "A durable fighter with simple abilities. Arthur is easy to control and forgiving for beginners."
         },
 
         {
             name: "Dun",
-            image: "images/dun.jpg",
+            image: "image/dun.jpg",
             description:
                 "A tough fighter with good survivability and crowd control, making him easier to learn in Clash Lane."
         },
 
         {
             name: "Biron",
-            image: "images/biron.jpg",
+            image: "image/biron.jpg",
             description:
                 "A strong fighter with straightforward skills, good damage and useful sustain during fights."
         }
@@ -107,21 +107,21 @@ const heroRecommendations = {
     jungle: [
         {
             name: "Butterfly",
-            image: "images/butterfly.jpg",
+            image: "image/butterfly.jpg",
             description:
                 "A straightforward assassin who can quickly finish low-health enemies and move between fights."
         },
 
         {
             name: "Wukong",
-            image: "images/wukong.jpg",
+            image: "image/wukong.jpg",
             description:
                 "A beginner-friendly assassin with strong basic attacks and simple burst damage."
         },
 
         {
             name: "Lam",
-            image: "images/lam.jpg",
+            image: "image/jungle.jpg",
             description:
                 "A mobile assassin who can move quickly around the map and chase down enemies."
         }
@@ -130,21 +130,21 @@ const heroRecommendations = {
     mid: [
         {
             name: "Angela",
-            image: "images/angela.jpg",
+            image: "image/angela.jpg",
             description:
                 "A simple mage with strong ranged abilities and burst damage, making her easy for beginners to understand."
         },
 
         {
             name: "Princess Frost",
-            image: "images/princess-frost.jpg",
+            image: "image/mid-lane.jpg",
             description:
                 "A mage with useful crowd control and long-range abilities that can help control team fights."
         },
 
         {
             name: "Milady",
-            image: "images/milady.jpg",
+            image: "image/milady.jpg",
             description:
                 "A straightforward mage who can summon machines and pressure enemy towers from a safe distance."
         }
@@ -153,21 +153,21 @@ const heroRecommendations = {
     farm: [
         {
             name: "Hou Yi",
-            image: "images/hou-yi.jpg",
+            image: "image/hou-yi.jpg",
             description:
                 "A beginner-friendly marksman with simple attacks and strong continuous damage."
         },
 
         {
             name: "Lady Sun",
-            image: "images/lady-sun.jpg",
+            image: "image/lady-sun.jpg",
             description:
                 "A marksman with good mobility and straightforward damage, suitable for learning positioning."
         },
 
         {
             name: "Alessio",
-            image: "images/alessio.jpg",
+            image: "image/alessio.jpg",
             description:
                 "A ranged damage dealer with easy-to-understand attacks and useful movement abilities."
         }
@@ -176,21 +176,21 @@ const heroRecommendations = {
     roamer: [
         {
             name: "Yaria",
-            image: "images/yaria.jpg",
+            image: "image/yaria.jpg",
             description:
                 "A supportive hero who can protect teammates and is relatively easy for new players to understand."
         },
 
         {
             name: "Dolia",
-            image: "images/dolia.jpg",
+            image: "image/dolia.jpg",
             description:
                 "A team-focused support hero with healing and useful abilities that help teammates during fights."
         },
 
         {
             name: "Zhang Fei",
-            image: "images/zhang-fei.jpg",
+            image: "image/zhang-fei.jpg",
             description:
                 "A durable tank who can protect teammates and absorb damage during team fights."
         }
