@@ -147,6 +147,62 @@
 
                 </div>
             </section>
+            <section class="battlefield-section">
+                <div class="battlefield-heading">
+                    <span>03 — LEARN THE BATTLEFIELD</span>
+                    <h2>Know Where You're Going</h2>
+                    <p>
+                        Understanding the battlefield helps you know where to
+                        go,
+                        where enemies may appear, and which objectives your team
+                        should focus on.
+                    </p>
+                </div>
+                <div class="battlefield-container">
+                    <div class="battlefield-map">
+                        <img src="images/hok-map.jpg"
+                            alt="Honor of Kings Battlefield Map">
+                    </div>
+
+                    <div class="battlefield-info">
+                        <span id="mapLabel">SELECT AN AREA</span>
+                        <h3 id="mapTitle">
+                            Explore the Battlefield
+                        </h3>
+                        <p id="mapDescription">
+                            Select one of the areas below to learn what it is
+                            and why it is important during a match.
+                        </p>
+                        <div class="map-tip" id="mapTip">
+                            💡 Tip: Knowing the map helps you make better
+                            decisions.
+                        </div>
+                    </div>
+                </div>
+                <div class="map-buttons">
+
+                    <button onclick="showMapInfo('clash', this)">
+                        ⚔️ Clash Lane
+                    </button>
+
+                    <button onclick="showMapInfo('jungle', this)">
+                        🌿 Jungle
+                    </button>
+
+                    <button onclick="showMapInfo('mid', this)">
+                        ✨ Mid Lane
+                    </button>
+
+                    <button onclick="showMapInfo('farm', this)">
+                        🏹 Farm Lane
+                    </button>
+
+                    <button onclick="showMapInfo('objective', this)">
+                        🐉 Objectives
+                    </button>
+
+                </div>
+            </section>
         </div>
         <script src="hok-guide.js"></script>
         <script

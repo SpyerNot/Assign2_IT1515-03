@@ -226,3 +226,96 @@ function showHeroes(role, clickedButton) {
 
     clickedButton.classList.add("active");
 }
+
+/* js for battlefield */
+const mapInformation = {
+
+    clash: {
+        label: "CLASH LANE",
+        title: "The Solo Battle",
+        description:
+            "Clash Lane is commonly played by fighters or tanks. " +
+            "Players here often fight independently while gaining " +
+            "gold and experience.",
+        tip:
+            "💡 Beginner Tip: Don't always rush into fights. " +
+            "Clear your minions and watch the mini-map before attacking."
+    },
+
+    jungle: {
+        label: "JUNGLE",
+        title: "Control the Battlefield",
+        description:
+            "The Jungle contains monsters that provide gold, " +
+            "experience and useful buffs. Junglers move around the " +
+            "map to help different lanes and secure objectives.",
+        tip:
+            "💡 Beginner Tip: Keep moving around the map and look " +
+            "for opportunities to help teammates."
+    },
+
+    mid: {
+        label: "MID LANE",
+        title: "The Centre of the Map",
+        description:
+            "Mid Lane is located in the centre of the battlefield. " +
+            "It gives players quick access to both sides of the map " +
+            "and is commonly played by mages.",
+        tip:
+            "💡 Beginner Tip: After clearing your minions, check " +
+            "whether another lane needs your help."
+    },
+
+    farm: {
+        label: "FARM LANE",
+        title: "Build Your Power",
+        description:
+            "Farm Lane is commonly played by marksmen. The goal is " +
+            "to earn gold, purchase equipment and become a powerful " +
+            "damage dealer later in the match.",
+        tip:
+            "💡 Beginner Tip: Focus on farming and avoid dangerous " +
+            "fights early in the game."
+    },
+
+    objective: {
+        label: "OBJECTIVES",
+        title: "More Important Than Kills",
+        description:
+            "Important neutral objectives can give your team useful " +
+            "advantages. Working together to secure objectives can " +
+            "help your team control the match.",
+        tip:
+            "💡 Beginner Tip: Don't focus only on kills. Help your " +
+            "team secure objectives and destroy enemy towers."
+    }
+};
+
+
+function showMapInfo(area, clickedButton) {
+
+    const info = mapInformation[area];
+
+    document.getElementById("mapLabel").textContent =
+        info.label;
+
+    document.getElementById("mapTitle").textContent =
+        info.title;
+
+    document.getElementById("mapDescription").textContent =
+        info.description;
+
+    document.getElementById("mapTip").textContent =
+        info.tip;
+
+
+    // Remove previous active button
+    document.querySelectorAll(".map-buttons button")
+        .forEach(button => {
+            button.classList.remove("active");
+        });
+
+
+    // Highlight selected button
+    clickedButton.classList.add("active");
+}
