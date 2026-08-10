@@ -160,7 +160,7 @@ const heroRecommendations = {
 
         {
             name: "Lady Sun",
-            image: "image/lady-sun.jpg",
+            image: "image/farm-lane.jpg",
             description:
                 "A marksman with good mobility and straightforward damage, suitable for learning positioning."
         },
@@ -183,7 +183,7 @@ const heroRecommendations = {
 
         {
             name: "Dolia",
-            image: "image/dolia.jpg",
+            image: "image/roamer.jpg",
             description:
                 "A team-focused support hero with healing and useful abilities that help teammates during fights."
         },

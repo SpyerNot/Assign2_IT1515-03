@@ -148,7 +148,7 @@
 /* style for find hero */
 .hero-recommend-section {
     padding: 100px 8%;
-    background-color: rgba(8, 8, 22, 0.9);
+    background-color: rgba(20, 20, 43, 0.8);
 }
 
 .hero-recommend-heading {
@@ -188,13 +188,10 @@
 }
 
 .hero-card {
-    background-color: #101028;
-
+    background-color: rgba(20, 20, 43, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-
     overflow: hidden;
-
     transition: 0.3s ease;
 }
 
