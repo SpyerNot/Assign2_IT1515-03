@@ -265,23 +265,13 @@
     line-height: 1.6;
 }
 
-.features-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
 .feature-card {
     background-color: #101028;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.1);
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
@@ -289,29 +279,24 @@
     box-shadow: 0 15px 35px rgba(111, 60, 255, 0.25);
 }
 
-.feature-card img {
-    width: 100%;
+.feature-card .card-img-top {
     height: 230px;
     object-fit: cover;
-    display: block;
 }
 
-.feature-content {
-    padding: 25px;
-}
-
-.feature-content h3 {
+.feature-card .card-title {
     color: white;
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
-.feature-content p {
+.feature-card .card-text {
     color: #cfcfd8;
     line-height: 1.6;
     font-size: 0.95rem;
-}   
+}
 
+/* beginner section */
 .beginner-section {
     background-color: #080816;
     padding: 100px 8%;

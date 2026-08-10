@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Honor of King</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="header.css" />
         <link rel="stylesheet" type="text/css" href="hok.css" />
     </head>
     <body>
-        <div class="container">
+        <div class="page-wrapper">
             <nav>
                 <a href="homepage.html">
                     <img src="logo.png" class="logo" alt="Logo">
@@ -62,7 +65,6 @@
                             <div class="swiper-slide role-slide">
                                 <img src="clash-lane.jpg" alt="Clash Lane">
                                 <div class="role-content">
-                                    <span>01</span>
                                     <h3>Clash Lane</h3>
                                     <p>
                                         Strong fighters who survive long battles
@@ -74,7 +76,6 @@
                             <div class="swiper-slide role-slide">
                                 <img src="jungle.jpg" alt="Jungle">
                                 <div class="role-content">
-                                    <span>02</span>
                                     <h3>Jungle</h3>
                                     <p>
                                         Moves around the map, defeats jungle
@@ -87,7 +88,6 @@
                             <div class="swiper-slide role-slide">
                                 <img src="mid-lane.jpg" alt="Mid Lane">
                                 <div class="role-content">
-                                    <span>03</span>
                                     <h3>Mid Lane</h3>
                                     <p>
                                         Mages deal powerful burst damage and
@@ -99,7 +99,6 @@
                             <div class="swiper-slide role-slide">
                                 <img src="farm-lane.jpg" alt="Farm Lane">
                                 <div class="role-content">
-                                    <span>04</span>
                                     <h3>Farm Lane</h3>
                                     <p>
                                         Marksmen collect gold and equipment
@@ -111,7 +110,6 @@
                             <div class="swiper-slide role-slide">
                                 <img src="roamer.jpg" alt="Roamer">
                                 <div class="role-content">
-                                    <span>05</span>
                                     <h3>Roamer</h3>
                                     <p>
                                         Protects teammates, starts team fights,
@@ -154,56 +152,65 @@
                 <div class="features-heading">
                     <span>DISCOVER THE GAME</span>
                     <h2>What Makes HoK Exciting?</h2>
-                    <p>
-                        Discover the features that make every match fun,
-                        competitive and different.
-                    </p>
+                    <p>Discover the features that make every match fun,
+                        competitive and different.</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <img src="hok-battle.jpg" alt="5v5 Team Battle">
-                        <div class="feature-content">
-                            <h3>Fast-Paced 5v5 Battles</h3>
-                            <p>
-                                Team up with four other players and fight in
-                                exciting
-                                battles where teamwork, timing and strategy
-                                matter.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <img src="hok-heroes.jpg" alt="Honor of Kings Heroes">
-                        <div class="feature-content">
-                            <h3>Unique Heroes</h3>
-                            <p>
-                                Choose from many heroes with different
-                                abilities,
-                                roles and playstyles to find the one that suits
-                                you.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <img src="hok-skins.jpg" alt="Honor of Kings Skins">
-                        <div class="feature-content">
-                            <h3>Amazing Skins</h3>
-                            <p>
-                                Enjoy creative skins with beautiful designs,
-                                animations and visual effects.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <img src="hok-events.jpg" alt="Honor of Kings Events">
 
-                        <div class="feature-content">
-                            <h3>Events & Rewards</h3>
-                            <p>
-                                Join special events and challenges to earn
-                                rewards
-                                and experience new content.
-                            </p>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card feature-card h-100">
+                                <img src="hok-battle.jpg" class="card-img-top"
+                                    alt="5v5 Team Battle">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fast-Paced 5v5
+                                        Battles</h3>
+                                    <p class="card-text">Team up with four other
+                                        players and fight in exciting battles
+                                        where teamwork, timing and strategy
+                                        matter.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card feature-card h-100">
+                                <img src="hok-heroes.jpg" class="card-img-top"
+                                    alt="Honor of Kings Heroes">
+                                <div class="card-body">
+                                    <h3 class="card-title">Unique Heroes</h3>
+                                    <p class="card-text">Choose from many heroes
+                                        with different abilities, roles and
+                                        playstyles to find the one that suits
+                                        you.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card feature-card h-100">
+                                <img src="hok-skins.jpg" class="card-img-top"
+                                    alt="Honor of Kings Skins">
+                                <div class="card-body">
+                                    <h3 class="card-title">Amazing Skins</h3>
+                                    <p class="card-text">Enjoy creative skins
+                                        with beautiful designs, animations and
+                                        visual effects.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card feature-card h-100">
+                                <img src="hok-events.jpg" class="card-img-top"
+                                    alt="Honor of Kings Events">
+                                <div class="card-body">
+                                    <h3 class="card-title">Events & Rewards</h3>
+                                    <p class="card-text">Join special events and
+                                        challenges to earn rewards and
+                                        experience new content.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,44 +276,22 @@
         <script>
         const roleSwiper = new Swiper(".role-swiper", {
             loop: true,
+            loopAdditionalSlides: 3,
+            speed: 700,
             centeredSlides: true,
             grabCursor: true,
-            keyboard: {
-                enabled: true
-            },
-            
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-
+            keyboard: { enabled: true },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             breakpoints: {
-                0: {
-                    slidesPerView: 1.15,
-                    spaceBetween: 16
-                },
-
-                600: {
-                    slidesPerView: 1.8,
-                    spaceBetween: 22
-                },
-
-                900: {
-                    slidesPerView: 2.6,
-                    spaceBetween: 28
-                },
-
-                1200: {
-                    slidesPerView: 3.3,
-                    spaceBetween: 32
+                0: { slidesPerView: 1.15, spaceBetween: 16 },
+                600: { slidesPerView: 1.8, spaceBetween: 22 },
+                900: { slidesPerView: 2.6, spaceBetween: 28 },
+                1200: { slidesPerView: 3, spaceBetween: 32 } // lowered from 3.3
                 }
-            }
-        });
+            });
         </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
