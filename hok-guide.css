@@ -1,0 +1,277 @@
+/*style of intro*/
+.intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+
+.intro h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 12px 0 18px;
+    font-weight: bold;
+}
+
+.intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #c7c7d3;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* style of role section*/
+.role-finder {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.role-quiz {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 40px;
+
+    background-color: #101028;
+
+    border: 1px solid rgba(121, 87, 232, 0.5);
+    border-radius: 15px;
+
+    color: white;
+}
+
+.quiz-small-title {
+    color: #9c7cff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.role-quiz h2 {
+    font-size: 2.2rem;
+    margin: 8px 0 15px;
+}
+
+.role-quiz hr {
+    border: none;
+    height: 1px;
+    background-color: #45455f;
+
+    margin-bottom: 30px;
+}
+
+.role-quiz h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* ANSWERS */
+
+.role-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.role-option {
+    width: 100%;
+
+    padding: 17px 20px;
+
+    background-color: #18183a;
+    color: #d8d8e3;
+
+    border: 1px solid #45455f;
+    border-radius: 7px;
+
+    text-align: left;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.role-option:hover {
+    background-color: #242452;
+    border-color: #7957e8;
+
+    transform: translateX(5px);
+}
+
+
+/* SELECTED ANSWER */
+
+.role-option.selected {
+    background-color: rgba(121, 87, 232, 0.25);
+    border-color: #9c7cff;
+    color: white;
+}
+
+
+/* RESULT */
+
+.role-result {
+    display: none;
+
+    margin-top: 30px;
+    padding: 25px;
+
+    background-color: rgba(121, 87, 232, 0.12);
+
+    border: 1px solid #7957e8;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.role-result span {
+    color: #9c7cff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.role-result h2 {
+    margin: 8px 0 10px;
+}
+
+.role-result p {
+    color: #c7c7d3;
+    line-height: 1.6;
+}
+
+/* style for find hero */
+.hero-recommend-section {
+    padding: 100px 8%;
+    background-color: rgba(8, 8, 22, 0.9);
+}
+
+.hero-recommend-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.hero-recommend-heading span {
+    color: #9c7cff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-recommend-heading h2 {
+    color: white;
+    font-size: 2.8rem;
+    margin: 10px 0 15px;
+}
+
+.hero-recommend-heading p {
+    color: #c7c7d3;
+    line-height: 1.7;
+}
+
+
+/* 3 HERO CARDS */
+
+.hero-recommend-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.hero-card {
+    background-color: #101028;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #7957e8;
+
+    box-shadow:
+        0 15px 35px rgba(121, 87, 232, 0.25);
+}
+
+.hero-card img {
+    width: 100%;
+    height: 360px;
+
+    object-fit: cover;
+    object-position: top;
+
+    display: block;
+}
+
+.hero-info {
+    padding: 25px;
+}
+
+.hero-info h3 {
+    color: white;
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.hero-info p {
+    color: #c7c7d3;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* ROLE BUTTONS */
+
+.role-buttons {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.role-buttons button {
+    padding: 15px;
+
+    background-color: #101028;
+    color: white;
+
+    border: 1px solid #45455f;
+
+    cursor: pointer;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+}
+
+.role-buttons button:hover {
+    background-color: #242452;
+
+    border-color: #7957e8;
+}
+
+.role-buttons button.active {
+    background-color: #7957e8;
+
+    border-color: #9c7cff;
+}
