@@ -1,82 +1,834 @@
-header{
+/* =========================================
+   GENERAL PAGE
+========================================= */
 
-    width:100%;
+* {
+    box-sizing: border-box;
+}
 
-    height:100vh;
+body {
+
+    margin: 0;
 
     background:
-    linear-gradient(rgba(0,0,0,.45),
-    rgba(0,0,0,.45)),
-    url(images/background.jpg);
+        radial-gradient(
+            circle at 50% 30%,
+            #161033 0%,
+            #09081c 45%,
+            #050514 100%
+        );
 
-    background-size:cover;
+    color: white;
 
-    background-position:center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+
+    min-height: 280px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 8%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 5, 25, 1) 0%,
+            rgba(5, 5, 25, 0.85) 45%,
+            rgba(5, 5, 25, 0.2) 100%
+        );
 
 }
 
 
-.hero h1{
+/* Hero text */
 
-    font-size:120px;
+.hero-text {
 
-    font-weight:900;
+    position: relative;
 
-    color:white;
-
-    line-height:1;
+    z-index: 2;
 
 }
 
-.hero h2{
 
-    font-size:60px;
+.hero-text h1 {
 
-    color:white;
+    margin: 0;
 
-}
-.buttons{
+    font-size: 42px;
 
-    margin-top:40px;
+    letter-spacing: 2px;
 
-}
-
-.buttons button{
-
-    padding:18px 50px;
-
-    margin-right:20px;
-
-    background:midnightblue;
-
-    color:white;
-
-    border:none;
-
-    font-size:20px;
-
-    cursor:pointer;
+    color: white;
 
 }
 
-.hero{
-    position:relative;
-    height:85vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:90%;
-    margin:auto;
+
+.hero-text h2 {
+
+    margin-top: 20px;
+
+    margin-bottom: 25px;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    color: #a855ff;
+
 }
 
-.hero-image{
-    flex:1;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 25px;
+
 }
 
-.hero-image img{
-    width:650px;
-    transform:translateY(40px);
+
+.buttons button {
+
+    padding: 14px 28px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 14px;
+
+    color: white;
+
+    background: transparent;
+
+    border: 1px solid #a855ff;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+
+.buttons button:first-child {
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2cff,
+            #4d1c9c
+        );
+
+}
+
+
+.buttons button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 15px rgba(168, 85, 255, 0.6);
+
+}
+
+
+/* =========================================
+   BATTLEFIELD SECTION
+========================================= */
+
+.battlefield {
+
+    width: 1100px;
+
+    max-width: 94%;
+
+    margin: 60px auto 80px;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.battlefield-heading {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.small-title {
+
+    margin: 0 0 8px;
+
+    color: #a855ff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+}
+
+
+.battlefield-heading h1 {
+
+    margin: 0;
+
+    font-size: 44px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.instruction {
+
+    margin-top: 12px;
+
+    color: #b5b2c9;
+
+    font-size: 14px;
+
+}
+
+
+.instruction span {
+
+    color: #a855ff;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.map-container {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    border: 2px solid #7138d8;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 15px rgba(112, 56, 216, 0.7),
+        0 0 35px rgba(112, 56, 216, 0.25);
+
+}
+
+
+.map-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================
+   ROLE MARKER
+========================================= */
+
+.role-marker {
+
+    position: absolute;
+
+    z-index: 10;
+
+}
+
+
+/* =========================================
+   PLUS BUTTON
+========================================= */
+
+.plus {
+
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: rgba(5, 5, 15, 0.9);
+
+    font-size: 30px;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+
+}
+
+
+.plus:hover {
+
+    transform: scale(1.12);
+
+}
+
+
+/* =========================================
+   ROLE LABEL
+========================================= */
+
+.role-label {
+
+    position: absolute;
+
+    bottom: 68px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 7px 12px;
+
+    background: rgba(5, 5, 15, 0.94);
+
+    border-radius: 5px;
+
+    white-space: nowrap;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   INFORMATION BOX
+========================================= */
+
+.role-info {
+
+    position: absolute;
+
+    width: 245px;
+
+    padding: 17px;
+
+    background: rgba(7, 7, 24, 0.97);
+
+    border-radius: 10px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.25s;
+
+    z-index: 100;
+
+}
+
+
+/*
+    JavaScript adds this class
+*/
+
+.role-info.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+.role-info h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 18px;
+
+}
+
+
+.role-info p {
+
+    margin: 0 0 10px;
+
+    color: #d4d2df;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+}
+
+
+/* =========================================
+   GOLD LANE
+   Upper-left
+========================================= */
+
+.gold-lane {
+
+    left: 17%;
+
+    top: 22%;
+
+}
+
+
+.gold-lane .plus {
+
+    border: 3px solid #e7b629;
+
+    color: #e7b629;
+
+    box-shadow:
+        0 0 12px rgba(231, 182, 41, 0.65);
+
+}
+
+
+.gold-lane .role-label {
+
+    color: #e7b629;
+
+}
+
+
+.gold-lane .role-info {
+
+    left: -70px;
+
+    top: -210px;
+
+    border: 2px solid #e7b629;
+
+}
+
+
+.gold-lane .role-info h2 {
+
+    color: #e7b629;
+
+}
+
+
+/* =========================================
+   MID LANE
+   Centre
+========================================= */
+
+.mid-lane {
+
+    left: 47%;
+
+    top: 48%;
+
+}
+
+
+.mid-lane .plus {
+
+    border: 3px solid #48aaff;
+
+    color: #48aaff;
+
+    box-shadow:
+        0 0 12px rgba(72, 170, 255, 0.65);
+
+}
+
+
+.mid-lane .role-label {
+
+    color: #48aaff;
+
+}
+
+
+.mid-lane .role-info {
+
+    left: -65px;
+
+    top: -225px;
+
+    border: 2px solid #48aaff;
+
+}
+
+
+.mid-lane .role-info h2 {
+
+    color: #48aaff;
+
+}
+
+
+/* =========================================
+   JUNGLER
+   Slightly higher
+   Around red-buff/jungle area
+========================================= */
+
+.jungler {
+
+    left: 59%;
+
+    top: 64%;
+
+}
+
+
+.jungler .plus {
+
+    border: 3px solid #62df55;
+
+    color: #62df55;
+
+    box-shadow:
+        0 0 12px rgba(98, 223, 85, 0.65);
+
+}
+
+
+.jungler .role-label {
+
+    color: #62df55;
+
+}
+
+
+.jungler .role-info {
+
+    left: -70px;
+
+    top: -225px;
+
+    border: 2px solid #62df55;
+
+}
+
+
+.jungler .role-info h2 {
+
+    color: #62df55;
+
+}
+
+
+/* =========================================
+   ROAMER
+   Lower-left
+   Closer to Gold Lane
+========================================= */
+
+.roamer {
+
+    left: 25%;
+
+    top: 69%;
+
+}
+
+
+.roamer .plus {
+
+    border: 3px solid #a855ff;
+
+    color: #a855ff;
+
+    box-shadow:
+        0 0 12px rgba(168, 85, 255, 0.65);
+
+}
+
+
+.roamer .role-label {
+
+    color: #a855ff;
+
+}
+
+
+.roamer .role-info {
+
+    left: -80px;
+
+    top: -210px;
+
+    border: 2px solid #a855ff;
+
+}
+
+
+.roamer .role-info h2 {
+
+    color: #a855ff;
+
+}
+
+
+/* =========================================
+   EXP LANE
+   Lower-right
+========================================= */
+
+.exp-lane {
+
+    right: 13%;
+
+    top: 70%;
+
+}
+
+
+.exp-lane .plus {
+
+    border: 3px solid #ff4d3d;
+
+    color: #ff4d3d;
+
+    box-shadow:
+        0 0 12px rgba(255, 77, 61, 0.65);
+
+}
+
+
+.exp-lane .role-label {
+
+    color: #ff4d3d;
+
+}
+
+
+.exp-lane .role-info {
+
+    right: 75px;
+
+    top: -210px;
+
+    border: 2px solid #ff4d3d;
+
+}
+
+
+.exp-lane .role-info h2 {
+
+    color: #ff4d3d;
+
+}
+
+
+/* =========================================
+   LEGEND
+========================================= */
+
+.legend {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 20px;
+
+    background: rgba(4, 5, 22, 0.9);
+
+    border-left: 2px solid #171d48;
+
+    border-right: 2px solid #171d48;
+
+    border-bottom: 2px solid #171d48;
+
+}
+
+
+.legend-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #c6c4d5;
+
+    font-size: 12px;
+
+}
+
+
+.legend-dot {
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 2px;
+
+}
+
+
+/* Purple */
+
+.roamer-dot {
+
+    background: #a855ff;
+
+    box-shadow: 0 0 8px #a855ff;
+
+}
+
+
+/* Gold */
+
+.gold-dot {
+
+    background: #e7b629;
+
+    box-shadow: 0 0 8px #e7b629;
+
+}
+
+
+/* Red */
+
+.exp-dot {
+
+    background: #ff4d3d;
+
+    box-shadow: 0 0 8px #ff4d3d;
+
+}
+
+
+/* Blue */
+
+.mid-dot {
+
+    background: #48aaff;
+
+    box-shadow: 0 0 8px #48aaff;
+
+}
+
+
+/* Green */
+
+.jungle-dot {
+
+    background: #62df55;
+
+    box-shadow: 0 0 8px #62df55;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+
+        padding-left: 5%;
+
+    }
+
+    .hero-text h1 {
+
+        font-size: 32px;
+
+    }
+
+    .battlefield-heading h1 {
+
+        font-size: 30px;
+
+    }
+
+    .map-container {
+
+        aspect-ratio: 1 / 1;
+
+    }
+
+    .plus {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 22px;
+
+    }
+
+    .role-label {
+
+        font-size: 9px;
+
+    }
+
+    .role-info {
+
+        width: 200px;
+
+    }
+
+    .legend {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
 }

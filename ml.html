@@ -1,43 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mobile Legend</title>
-    <link rel="stylesheet" type="text/css" href="header.css"/>
+
+    <!-- Your existing navigation CSS -->
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+    <!-- Mobile Legends CSS -->
     <link rel="stylesheet" type="text/css" href="ml.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="ml.js" defer></script>
 </head>
+
+
 <body>
+
+    <!-- =====================================
+         NAVIGATION BAR
+    ====================================== -->
+
     <div class="page-wrapper">
+
         <nav>
+
             <a href="homepage.html">
                 <img src="image/logo.png" class="logo" alt="Logo">
             </a>
+
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="ml.html">Mobile Legend</a></li>
-                <li><a href="hok.html">Honor of King</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="ml.html">Mobile Legend</a>
+                </li>
+
+                <li>
+                    <a href="hok.html">Honor of King</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+
             </ul>
+
         </nav>
-        <div class="hero">
+
+    </div>
+
+
+    <!-- =====================================
+         HERO SECTION
+    ====================================== -->
+
+    <section class="hero">
 
         <div class="hero-text">
 
-            <h1>GAME GUIDES</h1>
+            <h1>ML GAME GUIDES</h1>
 
             <h2>HONE YOUR SKILLS</h2>
 
             <div class="buttons">
-                <button>Official Guides</button>
+
+                <button>Beginner Guides</button>
+
                 <button>Pro Guides</button>
+
             </div>
 
         </div>
-    </div>
-    <div class="hero-image">
-        <img src="Miya.jpg" alt="Miya photo">
-    </div>
+
+    </section>
+
+
+    <!-- =====================================
+         BATTLEFIELD MAP
+    ====================================== -->
+
+    <section class="battlefield">
+
+        <!-- Heading -->
+
+        <div class="battlefield-heading">
+
+            <p class="small-title">
+                MOBILE LEGENDS BANG BANG
+            </p>
+
+            <h1>
+                BATTLEFIELD MAP
+            </h1>
+
+            <p class="instruction">
+                Hover the <span>+</span> button on each role
+                marker to learn about each lane.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             MAP
+        ====================================== -->
+
+        <div class="map-container">
+
+            <!--
+                Put your official MLBB map image here.
+
+                File:
+                image/mlbb-map.jpg
+            -->
+
+            <img
+                src="image/mlbb-map.png"
+                class="map-image"
+                alt="Mobile Legends Bang Bang Battlefield Map"
+            >
+
+
+            <!-- =================================
+                 GOLD LANE
+            ================================== -->
+
+            <div class="role-marker gold-lane">
+
+                <div class="role-label">
+                    Gold Lane
+                </div>
+
+                <button class="plus">
+                    +
+                </button>
+
+                <div class="role-info">
+
+                    <h2>Gold Lane</h2>
+
+                    <p>
+                        The Gold Lane is commonly played by
+                        Marksmen who need gold to purchase items.
+                    </p>
+
+                    <p>
+                        The main goal is to farm safely and
+                        become a strong damage dealer.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 MID LANE
+            ================================== -->
+
+            <div class="role-marker mid-lane">
+
+                <div class="role-label">
+                    Mid Lane
+                </div>
+
+                <button class="plus">
+                    +
+                </button>
+
+                <div class="role-info">
+
+                    <h2>Mid Lane</h2>
+
+                    <p>
+                        The Mid Lane is usually occupied by
+                        Mages or heroes who can clear waves
+                        quickly.
+                    </p>
+
+                    <p>
+                        Mid Laners rotate around the map and
+                        help support other lanes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 JUNGLER
+            ================================== -->
+
+            <div class="role-marker jungler">
+
+                <div class="role-label">
+                    Jungler
+                </div>
+
+                <button class="plus">
+                    +
+                </button>
+
+                <div class="role-info">
+
+                    <h2>Jungler</h2>
+
+                    <p>
+                        The Jungler farms monsters in the
+                        jungle to gain gold and experience.
+                    </p>
+
+                    <p>
+                        They also help teammates through
+                        ganks and secure important objectives.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 ROAMER
+            ================================== -->
+
+            <div class="role-marker roamer">
+
+                <div class="role-label">
+                    Roamer
+                </div>
+
+                <button class="plus">
+                    +
+                </button>
+
+                <div class="role-info">
+
+                    <h2>Roamer</h2>
+
+                    <p>
+                        The Roamer moves around the map and
+                        supports teammates.
+                    </p>
+
+                    <p>
+                        Roamers commonly provide protection,
+                        vision and crowd control.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 EXP LANE
+            ================================== -->
+
+            <div class="role-marker exp-lane">
+
+                <div class="role-label">
+                    EXP Lane
+                </div>
+
+                <button class="plus">
+                    +
+                </button>
+
+                <div class="role-info">
+
+                    <h2>EXP Lane</h2>
+
+                    <p>
+                        The EXP Lane is usually occupied by
+                        durable Fighters who can survive alone.
+                    </p>
+
+                    <p>
+                        Heroes in this lane gain experience
+                        quickly and become stronger during
+                        the early game.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             LEGEND
+        ====================================== -->
+
+        <div class="legend">
+
+            <div class="legend-item">
+                <span class="legend-dot roamer-dot"></span>
+                <span>Roamer</span>
+            </div>
+
+            <div class="legend-item">
+                <span class="legend-dot gold-dot"></span>
+                <span>Gold Lane</span>
+            </div>
+
+            <div class="legend-item">
+                <span class="legend-dot exp-dot"></span>
+                <span>EXP Lane</span>
+            </div>
+
+            <div class="legend-item">
+                <span class="legend-dot mid-dot"></span>
+                <span>Mid Lane</span>
+            </div>
+
+            <div class="legend-item">
+                <span class="legend-dot jungle-dot"></span>
+                <span>Jungler</span>
+            </div>
+
+        </div>
+
+    </section>
+
 
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-const button = document.getElementById("button");
-button.addEventListener("click", function() {
-    alert("Enquiry submitted!");
-})
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Enquiry submitted");
+});
