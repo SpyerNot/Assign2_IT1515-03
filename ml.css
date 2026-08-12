@@ -832,3 +832,723 @@ body {
     }
 
 }
+/* =========================================
+   ROLE GUIDES SLIDER
+========================================= */
+
+.role-guides {
+
+    width: 1080px;
+
+    max-width: 94%;
+
+    margin: 100px auto 100px;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.role-guides-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.section-title {
+
+    margin: 0 0 8px;
+
+    color: #a855ff;
+
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.role-guides-heading h1 {
+
+    margin: 0;
+
+    font-size: 27px;
+
+}
+
+
+/* =========================================
+   ARROW BUTTONS
+========================================= */
+
+.slider-arrows {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.slider-arrows button {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid #39394f;
+
+    background: #1b1b30;
+
+    color: #c9c7d5;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+
+.slider-arrows button:hover {
+
+    border-color: #a855ff;
+
+    color: white;
+
+    background: #29243d;
+
+}
+
+
+/* =========================================
+   ROLE TABS
+========================================= */
+
+.role-tabs {
+
+    display: flex;
+
+    gap: 9px;
+
+    margin-bottom: 32px;
+
+}
+
+
+.role-tab {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    border: 1px solid #35354b;
+
+    background: #1a1a2e;
+
+    color: #aaa8bc;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+
+.role-tab:hover {
+
+    border-color: #777;
+
+    color: white;
+
+}
+
+
+.role-tab.active {
+
+    color: white;
+
+    background: #a86d23;
+
+    border-color: #d8942e;
+
+    box-shadow:
+        0 0 12px rgba(216, 148, 46, 0.35);
+
+}
+
+
+.tab-icon {
+
+    font-size: 20px;
+
+}
+
+
+/* Tab colours */
+
+.roamer-icon {
+    color: #a855ff;
+}
+
+.gold-icon {
+    color: #f2aa27;
+}
+
+.exp-icon {
+    color: #e94d4d;
+}
+
+.jungle-icon {
+    color: #63d85a;
+}
+
+.mid-icon {
+    color: #5bbce2;
+}
+
+
+/* =========================================
+   SLIDER CONTAINER
+========================================= */
+
+.slider-container {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+}
+
+
+.slides {
+
+    display: flex;
+
+    transition: transform 0.6s ease-in-out;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL SLIDE
+========================================= */
+
+.role-slide {
+
+    min-width: 100%;
+
+    min-height: 375px;
+
+    display: flex;
+
+    background: rgba(10, 10, 27, 0.95);
+
+    border: 1px solid #303044;
+
+    border-radius: 17px;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   ROLE CONTENT
+========================================= */
+
+.role-content {
+
+    width: 75%;
+
+    padding: 36px;
+
+}
+
+
+.role-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.role-big-icon {
+
+    width: 63px;
+
+    height: 63px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 16px;
+
+    background: #202031;
+
+    font-size: 28px;
+
+}
+
+
+.role-title h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+}
+
+
+.role-title h3 {
+
+    margin: 7px 0 0;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.role-description {
+
+    margin-top: 28px;
+
+    max-width: 760px;
+
+    color: #e2e0ea;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.role-tags {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 24px;
+
+}
+
+
+.role-tags span {
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background: #211f2f;
+
+    border: 1px solid #4c3c58;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   POPULAR HEROES
+========================================= */
+
+.popular-title {
+
+    margin-top: 28px;
+
+    margin-bottom: 10px;
+
+    color: #85829d;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.heroes {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.heroes span {
+
+    padding: 7px 14px;
+
+    border-radius: 8px;
+
+    background: #202031;
+
+    border: 1px solid #3a394b;
+
+    color: #dedce7;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   VIDEO SIDE
+========================================= */
+
+.guide-video {
+
+    width: 25%;
+
+    border-left: 1px solid #29293b;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.play-button {
+
+    width: 92px;
+
+    height: 92px;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    border: 3px solid #e7a82f;
+
+    color: white;
+
+    font-size: 30px;
+
+    padding-left: 7px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(231, 168, 47, 0.25);
+
+    transition: 0.25s;
+
+}
+
+
+.play-button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 30px rgba(231, 168, 47, 0.5);
+
+}
+
+
+.guide-video h3 {
+
+    margin-top: 20px;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+}
+
+
+.guide-video p {
+
+    margin: 0;
+
+    color: #85829d;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   ROLE COLOURS
+========================================= */
+
+/* Roamer */
+
+.roamer-slide {
+
+    border-color: rgba(168, 85, 255, 0.4);
+
+}
+
+.roamer-slide .role-big-icon {
+
+    color: #a855ff;
+
+    border: 2px solid #a855ff;
+
+}
+
+.roamer-slide .role-title h3 {
+
+    color: #a855ff;
+
+}
+
+
+/* Gold */
+
+.gold-slide {
+
+    border-color: rgba(231, 168, 47, 0.45);
+
+}
+
+.gold-slide .role-big-icon {
+
+    color: #e7a82f;
+
+    border: 2px solid #e7a82f;
+
+}
+
+.gold-slide .role-title h3 {
+
+    color: #e7a82f;
+
+}
+
+
+/* EXP */
+
+.exp-slide {
+
+    border-color: rgba(233, 77, 77, 0.45);
+
+}
+
+.exp-slide .role-big-icon {
+
+    color: #e94d4d;
+
+    border: 2px solid #e94d4d;
+
+}
+
+.exp-slide .role-title h3 {
+
+    color: #e94d4d;
+
+}
+
+
+/* Jungle */
+
+.jungle-slide {
+
+    border-color: rgba(99, 216, 90, 0.45);
+
+}
+
+.jungle-slide .role-big-icon {
+
+    color: #63d85a;
+
+    border: 2px solid #63d85a;
+
+}
+
+.jungle-slide .role-title h3 {
+
+    color: #63d85a;
+
+}
+
+
+/* Mid */
+
+.mid-slide {
+
+    border-color: rgba(91, 188, 226, 0.45);
+
+}
+
+.mid-slide .role-big-icon {
+
+    color: #5bbce2;
+
+    border: 2px solid #5bbce2;
+
+}
+
+.mid-slide .role-title h3 {
+
+    color: #5bbce2;
+
+}
+
+
+/* =========================================
+   SLIDER DOTS
+========================================= */
+
+.slider-dots {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 18px;
+
+}
+
+
+.dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #4b4b5a;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.dot.active {
+
+    width: 27px;
+
+    border-radius: 10px;
+
+    background: #e7a82f;
+
+    box-shadow:
+        0 0 10px rgba(231, 168, 47, 0.5);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .role-tabs {
+
+        overflow-x: auto;
+
+        padding-bottom: 8px;
+
+    }
+
+
+    .role-tab {
+
+        white-space: nowrap;
+
+    }
+
+
+    .role-slide {
+
+        flex-direction: column;
+
+    }
+
+
+    .role-content {
+
+        width: 100%;
+
+        padding: 25px;
+
+    }
+
+
+    .guide-video {
+
+        width: 100%;
+
+        min-height: 170px;
+
+        border-left: none;
+
+        border-top: 1px solid #29293b;
+
+    }
+
+
+    .role-description {
+
+        font-size: 13px;
+
+    }
+
+}
