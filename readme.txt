@@ -62,15 +62,16 @@ JavaScript Interactions:
 - Dynamic battlefield information based on selected area
 
 
-Student 2: [Student Name]
+Student 2: Low Li Wen
 
 Pages / Parts Completed:
 
-- [Page / Feature]
-- [Page / Feature]
-- [Page / Feature]
-
-
+- Mobile Legend Page (ml.html)
+- Mobile Legend Style Sheet (ml.css)
+- Mobile Legend script (ml.js)
+- Contact Us Page (contact.html)
+- Contact Us Style Sheet (contact.css)
+- Contatct Us Script (contact.js)
 ==================================================
 2. SOURCES / REFERENCES
 ==================================================
@@ -83,6 +84,13 @@ https://www.honorofkings.com/
 Honor of Kings game information, heroes, roles, game modes
 and other game-related information were referenced from
 the official Honor of Kings website and in-game content.
+
+MOBILE LEGEND BANG BANG
+
+Official Mobile Legend Bang Bang Website:
+https://www.mobilelegends.com/
+
+Everything related Mobile Legend is refrenced from this website.
 
 
 IMAGES USED FOR HOMEPAGE AND HONOR OF KINGS PAGES
@@ -137,6 +145,11 @@ https://pin.it/1PCctUHjy
 
 Zhang Fei (zhang-fei.jpg):
 https://pin.it/uDJjtUVso
+
+Images used for the Mobile Legend Page:
+
+Mobile Legend Game Map:
+https://www.google.com/search?vsrid=COGHhY7RtLa03gEQAhgBIiRjNTE1MzcwMS04NTJkLTQyMzUtODYyOS1iNzkxMmNlOWI0MjEyggEiAnRwKENCdAoubGZlLWR1bW15OjE2NjEwZjQ2LWM2YjMtNGUwMi1hMWJjLThjOTk5MTNiNTAyMxJCCkAvYm5zL3RwL2JvcmcvdHAvYm5zL2xlbnMtZnJvbnRlbmQtYXBpL3Byb2QubGVucy1mcm9udGVuZC1hcGkvMTcyWgQKAnRwOPPG2eLyopYD&vsint=CAIqDAoCCAcSAggKGAEgATojChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEP8EGMcFJQAAgD8&udm=26&lns_mode=un&source=lns.web.gsbubb&vsdim=639,711&gsessionid=4JHUJWbRI5np6A24hZGzSHIdMEmfEdr7wxHruQjQzISmc5TjZWx2jw&lsessionid=adK9jJ31yRQxmk4dVF_D5L6TbOpasrWj47-jTuUorWQ085sjCySEKA&lns_surface=26&authuser=0&lns_vfs=e&qsubts=1786805951326&biw=1280&bih=665&hl=en-SG#sv=CAMSVhoyKhBlLTN3ZHdoMnpxSUdQaUNNMg4zd2R3aDJ6cUlHUGlDTToORUNZNzNMYUFaS0w0Mk0gBCocCgZtb3NhaWMSEGUtM3dkd2gyenFJR1BpQ00YADABGAcgpd7M3ApKCBABGAEgASgB
 
 
 VIDEO
