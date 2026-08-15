@@ -1,3 +1,4 @@
+/* HoK Video Style */
 .video{
     position: relative;
     width: 100%;
@@ -18,7 +19,7 @@
     border: none;
 }
 
-/* css to style info for Why I love Hok */
+/* What is Honor of Kings */
 .info-sections {
     background-color: rgba(20, 20, 43, 0.8);
     padding: 70px 8%;
@@ -57,7 +58,7 @@
     border-radius: 10px;
 }
 
-/* slider carousell*/
+/* Choose Your Role Carousel */
 .roles-section {
     padding: 90px 0 110px;
     background:
@@ -191,7 +192,7 @@
     opacity: 1;
 }
 
-/* game mode section */
+/* Game Mode Style */
 .game-mode-section {
     background-color: rgba(20, 20, 43, 0.8);
     padding: 100px 8%;
@@ -271,7 +272,7 @@
     margin: 0;
 }
 
-/* rank */
+/* Climb The Rank Style */
 .rank-section {
     width: 100%;
     background-color: rgba(20, 20, 43, 0.8);
@@ -321,7 +322,7 @@
     margin-bottom: 15px;
 }
 
-/* hok feature */
+/* What Makes HoK Exciting Bootstrap Feature Cards */
 .features-section {
     padding: 100px 8%;
     background-color: rgba(20, 20, 43, 0.8);
@@ -382,11 +383,13 @@
     font-size: 0.95rem;
 }
 
+
+/* Smooth scrolling for page navigation */
 html {
     scroll-behavior: smooth;
 }
 
-/* Beginner guide */
+/* Beginner Guide Style */
 .begin-section {
     width: 100%;
     padding: 120px 20px;
@@ -421,7 +424,7 @@ html {
 }
 
 
-/* Button */
+/* Beginner Button Style */
 .begin-btn {
     display: inline-block;
 

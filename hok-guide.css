@@ -1,4 +1,4 @@
-/*style of intro*/
+/* Beginner Guide Introduction Style */
 .intro {
     max-width: 900px;
     margin: 0 auto;
@@ -22,7 +22,7 @@
     line-height: 1.7;
 }
 
-/* style of role section*/
+/* Find Your Role Quiz Style */
 
 .role-finder {
     padding: 100px 20px;
@@ -95,7 +95,7 @@
     color: white;
 }
 
-/* result */
+/* Quiz Result Style - displayed after user selects an answer */
 
 .role-result {
     display: none;
@@ -123,7 +123,7 @@
     line-height: 1.6;
 }
 
-/* style for find hero */
+/* Beginner Hero Recommendation Style */
 .hero-recommend-section {
     padding: 100px 8%;
     background-color: rgba(20, 20, 43, 0.8);
@@ -203,7 +203,7 @@
 }
 
 
-/* role buttons */
+/* Role Selection Buttons Style */
 
 .role-buttons {
     max-width: 1200px;
@@ -233,7 +233,7 @@
     border-color: #9c7cff;
 }
 
-/* style of battlefield */
+/* Battlefield Guide Style */
 
 .battlefield-section {
     padding: 100px 8%;
@@ -342,7 +342,7 @@
     border-color: #9c7cff;
 }
 
-/* style tips section */
+/* Beginner Tips Style */
 .tips-section {
     padding: 100px 8%;
     background-color: rgba(20, 20, 43, 0.8);

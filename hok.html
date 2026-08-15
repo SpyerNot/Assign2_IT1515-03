@@ -4,15 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Honor of King</title>
+        <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet">
+        <!-- Swiper CSS for role carousel -->
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="header.css" />
         <link rel="stylesheet" type="text/css" href="hok.css" />
     </head>
     <body>
+        <!-- header -->
         <div class="page-wrapper">
             <nav>
                 <a href="homepage.html">
@@ -25,12 +28,16 @@
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </nav>
+
+            <!-- HoK Video Introduction -->
             <div class="video">
                 <video class="hok_vidbg" id="heroVideo" autoplay muted loop
                     playsinline>
                     <source src="hok_video.mp4" type="video/mp4">
                 </video>
             </div>
+
+             <!-- What is Honor of Kings -->
             <section class="info-sections">
                 <div class="info-block">
                     <div class="info-text">
@@ -55,6 +62,8 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Choose Your Role - Swiper Carousel -->
                 <section class="roles-section">
                     <div class="roles-heading">
                         <p>Find your playstyle</p>
@@ -125,6 +134,8 @@
                     </div>
                 </section>
             </section>
+
+            <!-- Game Modes Section -->
             <section class="game-mode-section">
                 <div class="game-mode-heading">
                     <span>MORE WAYS TO PLAY</span>
@@ -184,6 +195,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Climb the Ranks Section -->
             <section class="rank-section">
                 <div class="rank-container">
                     <div class="rank-image">
@@ -211,6 +224,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- What Makes HoK Exciting - Bootstrap Card Grid -->
             <section class="features-section">
                 <div class="features-heading">
                     <span>DISCOVER THE GAME</span>
@@ -277,6 +292,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Beginner Guide Section -->
             <section class="begin-section">
                 <div class="begin-content">
                     <span>BEGIN YOUR JOURNEY</span>
@@ -292,26 +309,31 @@
                 </div>
             </section>
         </div>
+
+        <!-- Swiper JavaScript Library -->
         <script
             src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Initialize and configure the Choose Your Role carousel -->
         <script>
-        const roleSwiper = new Swiper(".role-swiper", {
-            loop: true,
-            loopAdditionalSlides: 3,
-            speed: 700,
-            centeredSlides: true,
-            grabCursor: true,
-            keyboard: { enabled: true },
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            breakpoints: {
-                0: { slidesPerView: 1.15, spaceBetween: 16 },
-                600: { slidesPerView: 1.8, spaceBetween: 22 },
-                900: { slidesPerView: 2.6, spaceBetween: 28 },
-                1200: { slidesPerView: 3, spaceBetween: 32 } // lowered from 3.3
-                }
-            });
+            const roleSwiper = new Swiper(".role-swiper", {
+                loop: true,
+                loopAdditionalSlides: 3,
+                speed: 700,
+                centeredSlides: true,
+                grabCursor: true,
+                keyboard: { enabled: true },
+                pagination: { el: ".swiper-pagination", clickable: true },
+                navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                breakpoints: {
+                    0: { slidesPerView: 1.15, spaceBetween: 16 },
+                    600: { slidesPerView: 1.8, spaceBetween: 22 },
+                    900: { slidesPerView: 2.6, spaceBetween: 28 },
+                    1200: { slidesPerView: 3, spaceBetween: 32 } // lowered from 3.3
+                    }
+                });
         </script>
+        <!-- Bootstrap JavaScript Bundle -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>

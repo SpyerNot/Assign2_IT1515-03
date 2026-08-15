@@ -1,4 +1,4 @@
-/* js for quiz find role */
+/* Find Your Role Quiz. Recommends a role based on user's answer */
 function showRole(role, selectedButton) {
 
     const roles = {
@@ -78,7 +78,7 @@ function showRole(role, selectedButton) {
     resultBox.style.display = "block";
 }
 
-/* js for find hero */
+/* Beginner Hero Recommendation. Stores 3 beginner heroes for each role */
 const heroRecommendations = {
 
     clash: [
@@ -197,7 +197,7 @@ const heroRecommendations = {
     ]
 };
 
-
+/* Updates hero cards based on the selected role */
 function showHeroes(role, clickedButton) {
 
     const heroes = heroRecommendations[role];
@@ -227,7 +227,7 @@ function showHeroes(role, clickedButton) {
     clickedButton.classList.add("active");
 }
 
-/* js for battlefield */
+/* Interactive Battlefield Guide. Stores information for each map area */
 const mapInformation = {
 
     clash: {
@@ -291,7 +291,7 @@ const mapInformation = {
     }
 };
 
-
+/* Updates battlefield information based on choice */
 function showMapInfo(area, clickedButton) {
 
     const info = mapInformation[area];
