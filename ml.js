@@ -1,87 +1,147 @@
-// Get all role markers
-const roleMarkers = document.querySelectorAll(".role-marker");
+/* =====================================================
+   BATTLEFIELD MAP
+===================================================== */
+
+const roleMarkers =
+    document.querySelectorAll(".role-marker");
 
 
 roleMarkers.forEach(function(role) {
 
-    // Get the information box inside this role
-    const information = role.querySelector(".role-info");
+    const information =
+        role.querySelector(".role-info");
+
+    const plusButton =
+        role.querySelector(".plus-button");
 
 
-    // Show information when hovering over the role
+    /* ---------------------------------------------
+       SHOW INFORMATION WHEN HOVERING
+    --------------------------------------------- */
+
     role.addEventListener("mouseenter", function() {
 
-        information.classList.add("show");
+        information.style.opacity = "1";
+
+        information.style.visibility = "visible";
+
+        role.style.zIndex = "100";
 
     });
 
 
-    // Hide information when leaving the role
+    /* ---------------------------------------------
+       HIDE INFORMATION
+    --------------------------------------------- */
+
     role.addEventListener("mouseleave", function() {
 
-        information.classList.remove("show");
+        information.style.opacity = "0";
+
+        information.style.visibility = "hidden";
+
+        role.style.zIndex = "";
+
+    });
+
+
+    /* ---------------------------------------------
+       CLICK PLUS BUTTON
+    --------------------------------------------- */
+
+    plusButton.addEventListener("click", function(event) {
+
+        event.stopPropagation();
+
+
+        if (
+            information.style.visibility === "visible"
+        ) {
+
+            information.style.opacity = "0";
+
+            information.style.visibility = "hidden";
+
+        }
+
+        else {
+
+            information.style.opacity = "1";
+
+            information.style.visibility = "visible";
+
+            role.style.zIndex = "100";
+
+        }
 
     });
 
 });
-/* =========================================
+
+
+
+/* =====================================================
    ROLE GUIDE SLIDER
-========================================= */
+===================================================== */
 
-const slides = document.querySelector(".slides");
+const slides =
+    document.querySelector(".slides");
 
-const roleTabs = document.querySelectorAll(".role-tab");
+const roleTabs =
+    document.querySelectorAll(".role-tab");
 
-const dots = document.querySelectorAll(".dot");
+const dots =
+    document.querySelectorAll(".dot");
 
-const nextBtn = document.getElementById("nextBtn");
+const nextBtn =
+    document.getElementById("nextBtn");
 
-const prevBtn = document.getElementById("prevBtn");
+const prevBtn =
+    document.getElementById("prevBtn");
 
+
+/*
+   Start on Gold Lane
+
+   0 = Roamer
+   1 = Gold Lane
+   2 = EXP Lane
+   3 = Jungler
+   4 = Mid Lane
+*/
 
 let currentSlide = 1;
 
-const totalSlides = roleTabs.length;
+const totalSlides =
+    roleTabs.length;
 
 
-/* =========================================
-   CHANGE SLIDE
-========================================= */
+
+/* =====================================================
+   SHOW SLIDE
+===================================================== */
 
 function showSlide(index) {
 
-    /*
-        Make sure the index stays within
-        the available slides
-    */
-
     if (index >= totalSlides) {
-
         index = 0;
-
     }
 
     if (index < 0) {
-
         index = totalSlides - 1;
-
     }
 
 
     currentSlide = index;
 
 
-    /*
-        Move the slider
-    */
+    /* Move slider */
 
     slides.style.transform =
         `translateX(-${currentSlide * 100}%)`;
 
 
-    /*
-        Update role buttons
-    */
+    /* Update role tabs */
 
     roleTabs.forEach(function(tab) {
 
@@ -90,12 +150,11 @@ function showSlide(index) {
     });
 
 
-    roleTabs[currentSlide].classList.add("active");
+    roleTabs[currentSlide]
+        .classList.add("active");
 
 
-    /*
-        Update dots
-    */
+    /* Update dots */
 
     dots.forEach(function(dot) {
 
@@ -104,118 +163,183 @@ function showSlide(index) {
     });
 
 
-    dots[currentSlide].classList.add("active");
+    dots[currentSlide]
+        .classList.add("active");
 
 }
 
 
-/* =========================================
+
+/* =====================================================
    NEXT BUTTON
-========================================= */
+===================================================== */
 
-nextBtn.addEventListener("click", function() {
+nextBtn.addEventListener(
+    "click",
+    function() {
 
-    showSlide(currentSlide + 1);
+        showSlide(currentSlide + 1);
 
-});
+        resetAutoSlide();
+
+    }
+);
 
 
-/* =========================================
+
+/* =====================================================
    PREVIOUS BUTTON
-========================================= */
+===================================================== */
 
-prevBtn.addEventListener("click", function() {
+prevBtn.addEventListener(
+    "click",
+    function() {
 
-    showSlide(currentSlide - 1);
+        showSlide(currentSlide - 1);
 
-});
+        resetAutoSlide();
+
+    }
+);
 
 
-/* =========================================
+
+/* =====================================================
    ROLE TAB BUTTONS
-========================================= */
+===================================================== */
 
-roleTabs.forEach(function(tab) {
+roleTabs.forEach(
+    function(tab) {
 
-    tab.addEventListener("click", function() {
+        tab.addEventListener(
+            "click",
+            function() {
 
-        const slideNumber =
-            Number(tab.dataset.slide);
-
-        showSlide(slideNumber);
-
-    });
-
-});
+                const slideNumber =
+                    Number(
+                        tab.dataset.slide
+                    );
 
 
-/* =========================================
+                showSlide(slideNumber);
+
+                resetAutoSlide();
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =====================================================
    DOT BUTTONS
-========================================= */
+===================================================== */
 
-dots.forEach(function(dot) {
+dots.forEach(
+    function(dot) {
 
-    dot.addEventListener("click", function() {
+        dot.addEventListener(
+            "click",
+            function() {
 
-        const slideNumber =
-            Number(dot.dataset.slide);
-
-        showSlide(slideNumber);
-
-    });
-
-});
+                const slideNumber =
+                    Number(
+                        dot.dataset.slide
+                    );
 
 
-/* =========================================
+                showSlide(slideNumber);
+
+                resetAutoSlide();
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =====================================================
    AUTOMATIC SLIDER
-========================================= */
+===================================================== */
 
-let autoSlide = setInterval(function() {
+let autoSlide =
+    setInterval(
+        function() {
 
-    showSlide(currentSlide + 1);
+            showSlide(
+                currentSlide + 1
+            );
 
-}, 5000);
+        },
+        5000
+    );
 
 
-/*
-    Reset automatic timer whenever
-    the user manually changes the slide.
-*/
+
+/* =====================================================
+   RESET AUTOMATIC SLIDER
+===================================================== */
 
 function resetAutoSlide() {
 
     clearInterval(autoSlide);
 
-    autoSlide = setInterval(function() {
 
-        showSlide(currentSlide + 1);
+    autoSlide =
+        setInterval(
+            function() {
 
-    }, 5000);
+                showSlide(
+                    currentSlide + 1
+                );
+
+            },
+            5000
+        );
 
 }
 
 
-/* Reset timer when buttons are clicked */
 
-nextBtn.addEventListener("click", resetAutoSlide);
+/* =====================================================
+   YOUTUBE GUIDE BUTTONS
+===================================================== */
 
-prevBtn.addEventListener("click", resetAutoSlide);
-
-
-/* Reset timer when a role is selected */
-
-roleTabs.forEach(function(tab) {
-
-    tab.addEventListener("click", resetAutoSlide);
-
-});
+const videoButtons =
+    document.querySelectorAll(
+        ".play-button"
+    );
 
 
-/* Reset timer when a dot is clicked */
+videoButtons.forEach(
+    function(button) {
 
-dots.forEach(function(dot) {
+        button.addEventListener(
+            "click",
+            function() {
 
-    dot.addEventListener("click", resetAutoSlide);
+                const videoLink =
+                    button.dataset.video;
 
-});
+
+                window.open(
+                    videoLink,
+                    "_blank"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   INITIAL SLIDE
+===================================================== */
+
+showSlide(currentSlide);

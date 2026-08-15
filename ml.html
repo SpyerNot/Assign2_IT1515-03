@@ -2,68 +2,79 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mobile Legend</title>
 
-    <!-- Your existing navigation CSS -->
-    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet"
+        type="text/css"
+        href="header.css">
 
-    <!-- Mobile Legends CSS -->
-    <link rel="stylesheet" type="text/css" href="ml.css">
+    <link rel="stylesheet"
+        type="text/css"
+        href="ml.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- JavaScript -->
     <script src="ml.js" defer></script>
+
 </head>
 
 
 <body>
 
-    <!-- =====================================
-         NAVIGATION BAR
-    ====================================== -->
+<div class="page-wrapper">
 
-    <div class="page-wrapper">
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
 
-        <nav>
+    <nav>
 
-            <a href="homepage.html">
-                <img src="image/logo.png" class="logo" alt="Logo">
-            </a>
+        <a href="homepage.html">
 
-            <ul>
+            <img src="image/logo.png"
+                class="logo"
+                alt="Logo">
 
-                <li>
-                    <a href="homepage.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="ml.html">Mobile Legend</a>
-                </li>
-
-                <li>
-                    <a href="hok.html">Honor of King</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact us</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </div>
+        </a>
 
 
-    <!-- =====================================
-         HERO SECTION
-    ====================================== -->
+        <ul>
+
+            <li>
+                <a href="homepage.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="ml.html">
+                    Mobile Legend
+                </a>
+            </li>
+
+            <li>
+                <a href="hok.html">
+                    Honor of King
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact us
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
 
     <section class="hero">
 
@@ -73,76 +84,58 @@
 
             <h2>HONE YOUR SKILLS</h2>
 
-            <div class="buttons">
-
-                <button>Beginner Guides</button>
-
-                <button>Pro Guides</button>
-
-            </div>
-            <h3>What is MLBB?</h3>
-            <P>MLBB is a 5v5 MOBA game which aims to destroy the opposing teams turret</P>
+            <h3>Q: What is MLBB?</h3>
+            <p>A: MLBB is a 5v5 MOBA game where the aim is to destroy opposing team's turret</p>
 
         </div>
 
     </section>
 
 
+    <!-- =========================================
+         BATTLEFIELD MAP
+    ========================================== -->
+
     <section class="battlefield">
 
-        <div class="battlefield-heading">
+        <h1>BATTLEFIELD</h1>
 
-            <p class="small-title">
-                MOBILE LEGENDS BANG BANG
-            </p>
-
-            <h1>
-                BATTLEFIELD MAP
-            </h1>
-
-            <p class="instruction">
-                Hover the <span>+</span> button on each role
-                marker to learn about each lane.
-            </p>
-
-        </div>
-
-
+        <p>
+            Learn the different roles and lanes
+            in Mobile Legends by hovering over the plus buttons :D.
+        </p>
 
 
         <div class="map-container">
 
-
-            <img
-                src="image/mlbb-map.png"
+            <img src="image/mlbb-map.png"
                 class="map-image"
-                alt="Mobile Legends Bang Bang Battlefield Map"
-            >
+                alt="Mobile Legends Bang Bang Map">
 
 
+            <!-- =================================
+                 GOLD LANE
+            ================================== -->
 
             <div class="role-marker gold-lane">
+
+                <button class="plus-button">
+                    +
+                </button>
 
                 <div class="role-label">
                     Gold Lane
                 </div>
-
-                <button class="plus">
-                    +
-                </button>
 
                 <div class="role-info">
 
                     <h2>Gold Lane</h2>
 
                     <p>
-                        The Gold Lane is commonly played by
-                        Marksmen who need gold to purchase items.
-                    </p>
-
-                    <p>
-                        The main goal is to farm safely and
-                        become a strong damage dealer.
+                        The Gold Lane is usually occupied
+                        by Marksmen. Players gain extra gold
+                        to purchase items and become a strong
+                        source of damage later in the game.
                     </p>
 
                 </div>
@@ -150,87 +143,28 @@
             </div>
 
 
-            <div class="role-marker mid-lane">
-
-                <div class="role-label">
-                    Mid Lane
-                </div>
-
-                <button class="plus">
-                    +
-                </button>
-
-                <div class="role-info">
-
-                    <h2>Mid Lane</h2>
-
-                    <p>
-                        The Mid Lane is usually occupied by
-                        Mages or heroes who can clear waves
-                        quickly.
-                    </p>
-
-                    <p>
-                        Mid Laners rotate around the map and
-                        help support other lanes.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="role-marker jungler">
-
-                <div class="role-label">
-                    Jungler
-                </div>
-
-                <button class="plus">
-                    +
-                </button>
-
-                <div class="role-info">
-
-                    <h2>Jungler</h2>
-
-                    <p>
-                        The Jungler farms monsters in the
-                        jungle to gain gold and experience.
-                    </p>
-
-                    <p>
-                        They also help teammates through
-                        ganks and secure important objectives.
-                    </p>
-
-                </div>
-
-            </div>
-
+            <!-- =================================
+                 ROAMER
+            ================================== -->
 
             <div class="role-marker roamer">
+
+                <button class="plus-button">
+                    +
+                </button>
 
                 <div class="role-label">
                     Roamer
                 </div>
-
-                <button class="plus">
-                    +
-                </button>
 
                 <div class="role-info">
 
                     <h2>Roamer</h2>
 
                     <p>
-                        The Roamer moves around the map and
-                        supports teammates.
-                    </p>
-
-                    <p>
-                        Roamers commonly provide protection,
-                        vision and crowd control.
+                        The Roamer supports the team by
+                        providing vision, protecting allies
+                        and helping teammates during fights.
                     </p>
 
                 </div>
@@ -238,30 +172,86 @@
             </div>
 
 
+            <!-- =================================
+                 MID LANE
+            ================================== -->
+
+            <div class="role-marker mid-lane">
+
+                <button class="plus-button">
+                    +
+                </button>
+
+                <div class="role-label">
+                    Mid Lane
+                </div>
+
+                <div class="role-info">
+
+                    <h2>Mid Lane</h2>
+
+                    <p>
+                        The Mid Lane is commonly occupied
+                        by Mages. The mid laner helps clear
+                        waves and rotates to assist other lanes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 JUNGLER
+            ================================== -->
+
+            <div class="role-marker jungler">
+
+                <button class="plus-button">
+                    +
+                </button>
+
+                <div class="role-label">
+                    Jungler
+                </div>
+
+                <div class="role-info">
+
+                    <h2>Jungler</h2>
+
+                    <p>
+                        The Jungler farms jungle monsters,
+                        secures objectives and rotates around
+                        the map to help teammates.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 EXP LANE
+            ================================== -->
 
             <div class="role-marker exp-lane">
+
+                <button class="plus-button">
+                    +
+                </button>
 
                 <div class="role-label">
                     EXP Lane
                 </div>
-
-                <button class="plus">
-                    +
-                </button>
 
                 <div class="role-info">
 
                     <h2>EXP Lane</h2>
 
                     <p>
-                        The EXP Lane is usually occupied by
-                        durable Fighters who can survive alone.
-                    </p>
-
-                    <p>
-                        Heroes in this lane gain experience
-                        quickly and become stronger during
-                        the early game.
+                        The EXP Lane is commonly occupied
+                        by Fighters. Players gain experience
+                        quickly and become strong in team fights.
                     </p>
 
                 </div>
@@ -270,64 +260,37 @@
 
         </div>
 
-
-
-        <div class="legend">
-
-            <div class="legend-item">
-                <span class="legend-dot roamer-dot"></span>
-                <span>Roamer</span>
-            </div>
-
-            <div class="legend-item">
-                <span class="legend-dot gold-dot"></span>
-                <span>Gold Lane</span>
-            </div>
-
-            <div class="legend-item">
-                <span class="legend-dot exp-dot"></span>
-                <span>EXP Lane</span>
-            </div>
-
-            <div class="legend-item">
-                <span class="legend-dot mid-dot"></span>
-                <span>Mid Lane</span>
-            </div>
-
-            <div class="legend-item">
-                <span class="legend-dot jungle-dot"></span>
-                <span>Jungler</span>
-            </div>
-
-        </div>
-
     </section>
-    <!-- =========================================
-     ROLE GUIDES SLIDER
-========================================= -->
+
+
+   <!-- =========================================
+     ROLE GUIDE SLIDER
+========================================== -->
 
 <section class="role-guides">
 
-    <!-- Heading -->
-
-    <div class="role-guides-heading">
+    <div class="role-guide-header">
 
         <div>
-            <p class="section-title">LANE BREAKDOWN</p>
+            <p class="section-label">
+                LANE BREAKDOWN
+            </p>
 
-            <h1>ROLE GUIDES</h1>
+            <h1>
+                ROLE GUIDES
+            </h1>
         </div>
 
-        <!-- Slider arrows -->
+        <!-- SLIDER ARROWS -->
 
-        <div class="slider-arrows">
+        <div class="slider-buttons">
 
             <button id="prevBtn">
-                &#8249;
+                ‹
             </button>
 
             <button id="nextBtn">
-                &#8250;
+                ›
             </button>
 
         </div>
@@ -336,37 +299,62 @@
 
 
     <!-- =====================================
-         ROLE SELECTOR
+         ROLE TABS
     ====================================== -->
 
     <div class="role-tabs">
 
-        <button class="role-tab" data-slide="0">
-            <span class="tab-icon roamer-icon">♢</span>
+        <button
+            class="role-tab"
+            data-slide="0">
+
+            <span class="tab-icon">♢</span>
             Roamer
+
         </button>
 
-        <button class="role-tab active" data-slide="1">
-            <span class="tab-icon gold-icon">◉</span>
+
+        <button
+            class="role-tab active"
+            data-slide="1">
+
+            <span class="tab-icon">◉</span>
             Gold Lane
+
         </button>
 
-        <button class="role-tab" data-slide="2">
-            <span class="tab-icon exp-icon">↯</span>
+
+        <button
+            class="role-tab"
+            data-slide="2">
+
+            <span class="tab-icon">↯</span>
             Exp Lane
+
         </button>
 
-        <button class="role-tab" data-slide="3">
-            <span class="tab-icon jungle-icon">♧</span>
+
+        <button
+            class="role-tab"
+            data-slide="3">
+
+            <span class="tab-icon">♧</span>
             Jungler
+
         </button>
 
-        <button class="role-tab" data-slide="4">
-            <span class="tab-icon mid-icon">▷</span>
+
+        <button
+            class="role-tab"
+            data-slide="4">
+
+            <span class="tab-icon">▷</span>
             Mid Lane
+
         </button>
 
     </div>
+
 
 
     <!-- =====================================
@@ -378,25 +366,29 @@
         <div class="slides">
 
 
-            <!-- ==============================
+            <!-- =================================
                  ROAMER
-            =============================== -->
+            ================================== -->
 
-            <div class="role-slide roamer-slide">
+            <div class="slide">
 
-                <div class="role-content">
+                <div class="slide-content">
 
-                    <div class="role-title">
+                    <div class="role-heading">
 
-                        <div class="role-big-icon">
+                        <div class="role-icon roamer-icon">
                             ♢
                         </div>
 
                         <div>
 
-                            <h2>Roamer</h2>
+                            <h2>
+                                Roamer
+                            </h2>
 
-                            <h3>The Support</h3>
+                            <span>
+                                The Support
+                            </span>
 
                         </div>
 
@@ -405,10 +397,10 @@
 
                     <p class="role-description">
 
-                        The Roamer moves around the map to
-                        support teammates. They provide vision,
-                        protection and crowd control while
-                        helping other lanes.
+                        The Roamer moves around the map
+                        to support teammates. They provide
+                        vision, protection and crowd control
+                        while helping other lanes.
 
                     </p>
 
@@ -439,40 +431,53 @@
                 </div>
 
 
-                <div class="guide-video">
+                <div class="video-section">
 
-                    <button class="play-button">
+                    <button
+                        class="play-button"
+                        data-video="https://www.youtube.com/watch?v=9HnevdXMG4g&t=11s">
+
                         ▶
+
                     </button>
 
-                    <h3>Watch Guide</h3>
+                    <h3>
+                        Watch Guide
+                    </h3>
 
-                    <p>Click to open video</p>
+                    <p>
+                        Click to open video
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- ==============================
+
+            <!-- =================================
                  GOLD LANE
-            =============================== -->
+            ================================== -->
 
-            <div class="role-slide gold-slide">
+            <div class="slide">
 
-                <div class="role-content">
+                <div class="slide-content">
 
-                    <div class="role-title">
+                    <div class="role-heading">
 
-                        <div class="role-big-icon">
+                        <div class="role-icon gold-icon">
                             ◉
                         </div>
 
                         <div>
 
-                            <h2>Gold Lane</h2>
+                            <h2>
+                                Gold Lane
+                            </h2>
 
-                            <h3>The Carry</h3>
+                            <span>
+                                The Carry
+                            </span>
 
                         </div>
 
@@ -481,10 +486,11 @@
 
                     <p class="role-description">
 
-                        The Gold Lane is where marksmen thrive.
-                        This hero farms efficiently to gain gold
-                        and items, becoming a devastating damage
-                        dealer in the late game.
+                        The Gold Lane is where marksmen
+                        thrive. This hero farms efficiently
+                        to gain gold and items, becoming a
+                        devastating damage dealer in the late
+                        game.
 
                     </p>
 
@@ -515,40 +521,53 @@
                 </div>
 
 
-                <div class="guide-video">
+                <div class="video-section">
 
-                    <button class="play-button">
+                    <button
+                        class="play-button"
+                        data-video="https://www.youtube.com/watch?v=QiVGhux3Nkw">
+
                         ▶
+
                     </button>
 
-                    <h3>Watch Guide</h3>
+                    <h3>
+                        Watch Guide
+                    </h3>
 
-                    <p>Click to open video</p>
+                    <p>
+                        Click to open video
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- ==============================
+
+            <!-- =================================
                  EXP LANE
-            =============================== -->
+            ================================== -->
 
-            <div class="role-slide exp-slide">
+            <div class="slide">
 
-                <div class="role-content">
+                <div class="slide-content">
 
-                    <div class="role-title">
+                    <div class="role-heading">
 
-                        <div class="role-big-icon">
+                        <div class="role-icon exp-icon">
                             ↯
                         </div>
 
                         <div>
 
-                            <h2>EXP Lane</h2>
+                            <h2>
+                                Exp Lane
+                            </h2>
 
-                            <h3>The Fighter</h3>
+                            <span>
+                                The Fighter
+                            </span>
 
                         </div>
 
@@ -557,19 +576,19 @@
 
                     <p class="role-description">
 
-                        The EXP Lane is usually occupied by
-                        Fighters who can survive independently.
-                        They gain experience quickly and become
-                        strong during the mid and late game.
+                        The EXP Lane is commonly occupied
+                        by Fighters. Players gain experience
+                        quickly and become strong during
+                        team fights.
 
                     </p>
 
 
                     <div class="role-tags">
 
-                        <span>Durable</span>
-                        <span>Solo</span>
+                        <span>Fighter</span>
                         <span>Experience</span>
+                        <span>Team Fight</span>
 
                     </div>
 
@@ -583,48 +602,61 @@
 
                         <span>Yu Zhong</span>
                         <span>Terizla</span>
-                        <span>Paquito</span>
                         <span>Edith</span>
+                        <span>Arlott</span>
 
                     </div>
 
                 </div>
 
 
-                <div class="guide-video">
+                <div class="video-section">
 
-                    <button class="play-button">
+                    <button
+                        class="play-button"
+                        data-video="https://www.youtube.com/watch?v=W4IQy-2jVSA&t">
+
                         ▶
+
                     </button>
 
-                    <h3>Watch Guide</h3>
+                    <h3>
+                        Watch Guide
+                    </h3>
 
-                    <p>Click to open video</p>
+                    <p>
+                        Click to open video
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- ==============================
+
+            <!-- =================================
                  JUNGLER
-            =============================== -->
+            ================================== -->
 
-            <div class="role-slide jungle-slide">
+            <div class="slide">
 
-                <div class="role-content">
+                <div class="slide-content">
 
-                    <div class="role-title">
+                    <div class="role-heading">
 
-                        <div class="role-big-icon">
+                        <div class="role-icon jungle-icon">
                             ♧
                         </div>
 
                         <div>
 
-                            <h2>Jungler</h2>
+                            <h2>
+                                Jungler
+                            </h2>
 
-                            <h3>The Assassin</h3>
+                            <span>
+                                The Assassin
+                            </span>
 
                         </div>
 
@@ -633,19 +665,18 @@
 
                     <p class="role-description">
 
-                        The Jungler farms jungle monsters to gain
-                        gold and experience. They rotate around
-                        the battlefield to gank enemies and secure
-                        important objectives.
+                        The Jungler farms jungle monsters,
+                        secures objectives and rotates around
+                        the map to help teammates.
 
                     </p>
 
 
                     <div class="role-tags">
 
-                        <span>Jungle</span>
-                        <span>Ganking</span>
+                        <span>Farming</span>
                         <span>Objectives</span>
+                        <span>Rotation</span>
 
                     </div>
 
@@ -657,50 +688,63 @@
 
                     <div class="heroes">
 
-                        <span>Ling</span>
-                        <span>Lancelot</span>
                         <span>Fanny</span>
+                        <span>Ling</span>
                         <span>Hayabusa</span>
+                        <span>Julian</span>
 
                     </div>
 
                 </div>
 
 
-                <div class="guide-video">
+                <div class="video-section">
 
-                    <button class="play-button">
+                    <button
+                        class="play-button"
+                        data-video="https://www.youtube.com/watch?v=-bRIhiLaoO0&t">
+
                         ▶
+
                     </button>
 
-                    <h3>Watch Guide</h3>
+                    <h3>
+                        Watch Guide
+                    </h3>
 
-                    <p>Click to open video</p>
+                    <p>
+                        Click to open video
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <!-- ==============================
+
+            <!-- =================================
                  MID LANE
-            =============================== -->
+            ================================== -->
 
-            <div class="role-slide mid-slide">
+            <div class="slide">
 
-                <div class="role-content">
+                <div class="slide-content">
 
-                    <div class="role-title">
+                    <div class="role-heading">
 
-                        <div class="role-big-icon">
+                        <div class="role-icon mid-icon">
                             ▷
                         </div>
 
                         <div>
 
-                            <h2>Mid Lane</h2>
+                            <h2>
+                                Mid Lane
+                            </h2>
 
-                            <h3>The Mage</h3>
+                            <span>
+                                The Mage
+                            </span>
 
                         </div>
 
@@ -709,10 +753,10 @@
 
                     <p class="role-description">
 
-                        The Mid Lane is usually occupied by Mages
-                        who can clear minion waves quickly and
-                        rotate around the battlefield to assist
-                        their teammates.
+                        The Mid Lane is commonly occupied
+                        by Mages. The mid laner clears waves
+                        quickly and rotates to assist other
+                        lanes.
 
                     </p>
 
@@ -721,7 +765,7 @@
 
                         <span>Magic Damage</span>
                         <span>Rotation</span>
-                        <span>Team Fight</span>
+                        <span>Wave Clear</span>
 
                     </div>
 
@@ -734,24 +778,32 @@
                     <div class="heroes">
 
                         <span>Lunox</span>
-                        <span>Pharsa</span>
-                        <span>Valentina</span>
                         <span>Yve</span>
+                        <span>Valentina</span>
+                        <span>Pharsa</span>
 
                     </div>
 
                 </div>
 
 
-                <div class="guide-video">
+                <div class="video-section">
 
-                    <button class="play-button">
+                    <button
+                        class="play-button"
+                        data-video="https://www.youtube.com/watch?v=AiwV6iKWxzw&t">
+
                         ▶
+
                     </button>
 
-                    <h3>Watch Guide</h3>
+                    <h3>
+                        Watch Guide
+                    </h3>
 
-                    <p>Click to open video</p>
+                    <p>
+                        Click to open video
+                    </p>
 
                 </div>
 
@@ -762,26 +814,279 @@
     </div>
 
 
+
     <!-- =====================================
          SLIDER DOTS
     ====================================== -->
 
     <div class="slider-dots">
 
-        <span class="dot" data-slide="0"></span>
+        <span
+            class="dot"
+            data-slide="0">
+        </span>
 
-        <span class="dot active" data-slide="1"></span>
+        <span
+            class="dot active"
+            data-slide="1">
+        </span>
 
-        <span class="dot" data-slide="2"></span>
+        <span
+            class="dot"
+            data-slide="2">
+        </span>
 
-        <span class="dot" data-slide="3"></span>
+        <span
+            class="dot"
+            data-slide="3">
+        </span>
 
-        <span class="dot" data-slide="4"></span>
+        <span
+            class="dot"
+            data-slide="4">
+        </span>
 
     </div>
 
 </section>
 
+    <!-- =========================================
+     GAME MODES
+========================================== -->
+
+<section class="game-modes">
+
+    <div class="game-mode-header">
+
+        <p class="game-mode-label">
+            MOBILE LEGENDS BANG BANG
+        </p>
+
+        <h1>
+            GAME MODES
+        </h1>
+
+        <p class="game-mode-subtitle">
+            Hover a card to discover what each mode is about.
+        </p>
+
+    </div>
+
+
+    <div class="mode-container">
+
+
+        <!-- =================================
+             CLASSIC
+        ================================== -->
+
+        <div class="mode-card classic-card">
+
+            <div class="mode-inner">
+
+
+                <!-- FRONT -->
+
+                <div class="mode-front">
+
+                    <span class="mode-badge">
+                        5v5
+                    </span>
+
+
+                    <div class="mode-icon">
+                        ☆
+                    </div>
+
+
+                    <h2>
+                        CLASSIC
+                    </h2>
+
+                    <p>
+                        Where Legends Are Born
+                    </p>
+
+
+                    <span class="flip-text">
+                        ⟳&nbsp; Hover to flip
+                    </span>
+
+                </div>
+
+
+
+                <!-- BACK -->
+
+                <div class="mode-back">
+
+                    <h2>
+                        CLASSIC
+                    </h2>
+
+                    <p>
+                        Classic is the standard 5v5 game mode
+                        in Mobile Legends. Players choose their
+                        heroes and battle against the enemy team
+                        across three lanes.
+                    </p>
+
+                    <p>
+                        It is a great mode for practising heroes,
+                        testing builds and learning different
+                        strategies without affecting your Ranked
+                        position.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             RANKED
+        ================================== -->
+
+        <div class="mode-card ranked-card">
+
+            <div class="mode-inner">
+
+
+                <!-- FRONT -->
+
+                <div class="mode-front">
+
+                    <span class="mode-badge">
+                        Competitive
+                    </span>
+
+
+                    <div class="mode-icon">
+                        ♜
+                    </div>
+
+
+                    <h2>
+                        RANKED
+                    </h2>
+
+                    <p>
+                        Prove Your Worth
+                    </p>
+
+
+                    <span class="flip-text">
+                        ⟳&nbsp; Hover to flip
+                    </span>
+
+                </div>
+
+
+
+                <!-- BACK -->
+
+                <div class="mode-back">
+
+                    <h2>
+                        RANKED
+                    </h2>
+
+                    <p>
+                        Ranked is the competitive 5v5 mode
+                        where players compete to increase
+                        their rank.
+                    </p>
+
+                    <p>
+                        Winning matches helps you climb through
+                        the ranks, while losing can cause you to
+                        lose rank points or stars depending on
+                        your current rank.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             BRAWL
+        ================================== -->
+
+        <div class="mode-card brawl-card">
+
+            <div class="mode-inner">
+
+
+                <!-- FRONT -->
+
+                <div class="mode-front">
+
+                    <span class="mode-badge">
+                        5v5 Single Lane
+                    </span>
+
+
+                    <div class="mode-icon">
+                        ✣
+                    </div>
+
+
+                    <h2>
+                        BRAWL
+                    </h2>
+
+                    <p>
+                        Pure Chaos &amp; Fun
+                    </p>
+
+
+                    <span class="flip-text">
+                        ⟳&nbsp; Hover to flip
+                    </span>
+
+                </div>
+
+
+
+                <!-- BACK -->
+
+                <div class="mode-back">
+
+                    <h2>
+                        BRAWL
+                    </h2>
+
+                    <p>
+                        Brawl is a fast-paced 5v5 mode where
+                        both teams fight along a single lane.
+                    </p>
+
+                    <p>
+                        Heroes are selected from available
+                        options, making every match different
+                        and encouraging players to adapt
+                        quickly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</div>
 
 </body>
 
