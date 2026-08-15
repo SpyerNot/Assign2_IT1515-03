@@ -7,7 +7,7 @@ Gaming Hobby Website
 
 Group Members:
 1. Tan Sock Yong - 264411S
-2. [Student Name] - [Student ID]
+2. Low Li Wen - 260950D
 
 
 ==================================================

@@ -1,925 +1,496 @@
-/* =========================================
+/* =====================================================
    GENERAL PAGE
-========================================= */
+===================================================== */
 
 * {
     box-sizing: border-box;
 }
 
 body {
-
     margin: 0;
-
-    background:
-        radial-gradient(
-            circle at 50% 30%,
-            #161033 0%,
-            #09081c 45%,
-            #050514 100%
-        );
-
+    font-family: Arial, sans-serif;
+    background: #050816;
     color: white;
-
-    font-family: 'Orbitron', sans-serif;
 }
 
 
-/* =========================================
-   HERO SECTION
-========================================= */
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero {
+    min-height: 600px;
 
-    min-height: 280px;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("image/mlbb-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
 
     display: flex;
-
     align-items: center;
+    justify-content: center;
 
-    padding-left: 8%;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(5, 5, 25, 1) 0%,
-            rgba(5, 5, 25, 0.85) 45%,
-            rgba(5, 5, 25, 0.2) 100%
-        );
-
-}
-
-
-/* Hero text */
-
-.hero-text {
-
-    position: relative;
-
-    z-index: 2;
-
+    text-align: center;
 }
 
 
 .hero-text h1 {
-
-    margin: 0;
-
-    font-size: 42px;
-
-    letter-spacing: 2px;
-
-    color: white;
-
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
 
 .hero-text h2 {
-
-    margin-top: 20px;
-
-    margin-bottom: 25px;
-
-    font-size: 22px;
-
-    font-style: italic;
-
-    color: #a855ff;
-
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 
-/* =========================================
-   HERO BUTTONS
-========================================= */
-
 .buttons {
-
     display: flex;
-
-    gap: 25px;
-
+    gap: 20px;
+    justify-content: center;
 }
 
 
 .buttons button {
-
     padding: 14px 28px;
 
-    font-family: 'Orbitron', sans-serif;
-
-    font-size: 14px;
-
-    color: white;
-
-    background: transparent;
-
-    border: 1px solid #a855ff;
-
-    border-radius: 6px;
+    border: none;
+    border-radius: 8px;
 
     cursor: pointer;
 
-    transition: 0.25s;
+    font-size: 16px;
+    font-weight: bold;
 
-}
-
-
-.buttons button:first-child {
-
-    background:
-        linear-gradient(
-            135deg,
-            #7b2cff,
-            #4d1c9c
-        );
-
+    transition: 0.3s;
 }
 
 
 .buttons button:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 0 15px rgba(168, 85, 255, 0.6);
-
+    transform: scale(1.05);
 }
 
 
-/* =========================================
-   BATTLEFIELD SECTION
-========================================= */
+
+/* =====================================================
+   BATTLEFIELD
+===================================================== */
 
 .battlefield {
-
-    width: 1100px;
-
-    max-width: 94%;
-
-    margin: 60px auto 80px;
-
-}
-
-
-/* =========================================
-   HEADING
-========================================= */
-
-.battlefield-heading {
+    padding: 80px 20px;
 
     text-align: center;
 
-    margin-bottom: 30px;
-
+    background: #080b1c;
 }
 
 
-.small-title {
+.battlefield h1 {
+    font-size: 45px;
 
-    margin: 0 0 8px;
-
-    color: #a855ff;
-
-    font-size: 16px;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
+    margin-bottom: 10px;
 }
 
 
-.battlefield-heading h1 {
+.battlefield > p {
+    margin-bottom: 40px;
 
-    margin: 0;
-
-    font-size: 44px;
-
-    letter-spacing: 2px;
-
+    font-size: 18px;
 }
 
 
-.instruction {
 
-    margin-top: 12px;
-
-    color: #b5b2c9;
-
-    font-size: 14px;
-
-}
-
-
-.instruction span {
-
-    color: #a855ff;
-
-    font-size: 20px;
-
-    font-weight: bold;
-
-}
-
-
-/* =========================================
-   MAP
-========================================= */
+/* =====================================================
+   MAP CONTAINER
+===================================================== */
 
 .map-container {
-
     position: relative;
 
     width: 100%;
+    max-width: 1000px;
 
-    aspect-ratio: 1 / 1;
-
-    overflow: hidden;
-
-    border: 2px solid #7138d8;
-
-    border-radius: 20px;
-
-    box-shadow:
-        0 0 15px rgba(112, 56, 216, 0.7),
-        0 0 35px rgba(112, 56, 216, 0.25);
-
+    margin: 0 auto;
 }
 
 
 .map-image {
-
-    width: 100%;
-
-    height: 100%;
-
     display: block;
 
-    object-fit: cover;
-
+    width: 100%;
+    height: auto;
 }
 
 
-/* =========================================
-   ROLE MARKER
-========================================= */
+
+/* =====================================================
+   ROLE MARKERS
+===================================================== */
 
 .role-marker {
-
     position: absolute;
 
     z-index: 10;
 
-}
-
-
-/* =========================================
-   PLUS BUTTON
-========================================= */
-
-.plus {
-
-    width: 58px;
-
-    height: 58px;
-
-    border-radius: 50%;
-
-    background: rgba(5, 5, 15, 0.9);
-
-    font-size: 30px;
-
-    font-family: Arial, sans-serif;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.25s,
-        box-shadow 0.25s;
-
-}
-
-
-.plus:hover {
-
-    transform: scale(1.12);
-
-}
-
-
-/* =========================================
-   ROLE LABEL
-========================================= */
-
-.role-label {
-
-    position: absolute;
-
-    bottom: 68px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    padding: 7px 12px;
-
-    background: rgba(5, 5, 15, 0.94);
-
-    border-radius: 5px;
-
-    white-space: nowrap;
-
-    font-size: 13px;
-
-}
-
-
-/* =========================================
-   INFORMATION BOX
-========================================= */
-
-.role-info {
-
-    position: absolute;
-
-    width: 245px;
-
-    padding: 17px;
-
-    background: rgba(7, 7, 24, 0.97);
-
-    border-radius: 10px;
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    transform: translateY(10px);
-
-    transition: 0.25s;
-
-    z-index: 100;
-
+    text-align: center;
 }
 
 
 /*
-    JavaScript adds this class
+   When a marker is hovered,
+   bring the entire marker above
+   the other markers.
 */
 
-.role-info.show {
+.role-marker:hover {
+    z-index: 100;
+}
 
-    opacity: 1;
 
-    visibility: visible;
 
-    transform: translateY(0);
+/* =====================================================
+   PLUS BUTTON
+===================================================== */
 
+.plus-button {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    background: #151b35;
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.plus-button:hover {
+    transform: scale(1.1);
+}
+/* =====================================================
+   COLOURED MAP PLUS BUTTONS
+===================================================== */
+
+.gold-lane .plus-button {
+    border-color: #f5b82e;
+    color: #f5b82e;
+}
+
+.roamer .plus-button {
+    border-color: #a855f7;
+    color: #a855f7;
+}
+
+.mid-lane .plus-button {
+    border-color: #63b8dd;
+    color: #63b8dd;
+}
+
+.jungler .plus-button {
+    border-color: #69c957;
+    color: #69c957;
+}
+
+.exp-lane .plus-button {
+    border-color: #e25b57;
+    color: #e25b57;
+}
+
+
+
+/* =====================================================
+   ROLE LABEL
+===================================================== */
+
+.role-label {
+    margin-top: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    text-shadow:
+        2px 2px 4px black;
+}
+/* =====================================================
+   COLOURED MAP ROLE LABELS
+===================================================== */
+
+.gold-lane .role-label {
+    color: #f5b82e;
+}
+
+.roamer .role-label {
+    color: #a855f7;
+}
+
+.mid-lane .role-label {
+    color: #63b8dd;
+}
+
+.jungler .role-label {
+    color: #69c957;
+}
+
+.exp-lane .role-label {
+    color: #e25b57;
+}
+
+
+
+/* =====================================================
+   ROLE INFORMATION
+===================================================== */
+
+.role-info {
+    position: absolute;
+
+    width: 270px;
+
+    padding: 18px;
+
+    background: rgba(5, 8, 22, 0.96);
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+
+    z-index: 1000;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 
 .role-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
 
-    margin: 0 0 12px;
-
-    font-size: 18px;
-
+    font-size: 22px;
 }
 
 
 .role-info p {
+    margin: 0;
 
-    margin: 0 0 10px;
+    line-height: 1.5;
 
-    color: #d4d2df;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 13px;
-
-    line-height: 1.55;
-
+    font-size: 14px;
 }
 
 
-/* =========================================
+
+/* =====================================================
+   MAP ROLE POSITIONS
+
    GOLD LANE
    Upper-left
-========================================= */
+===================================================== */
 
 .gold-lane {
-
-    left: 17%;
-
-    top: 22%;
-
-}
-
-
-.gold-lane .plus {
-
-    border: 3px solid #e7b629;
-
-    color: #e7b629;
-
-    box-shadow:
-        0 0 12px rgba(231, 182, 41, 0.65);
-
-}
-
-
-.gold-lane .role-label {
-
-    color: #e7b629;
-
+    top: 18%;
+    left: 18%;
 }
 
 
 .gold-lane .role-info {
-
-    left: -70px;
-
-    top: -210px;
-
-    border: 2px solid #e7b629;
-
+    left: 60px;
+    top: -20px;
 }
 
 
-.gold-lane .role-info h2 {
 
-    color: #e7b629;
-
-}
-
-
-/* =========================================
-   MID LANE
-   Centre
-========================================= */
-
-.mid-lane {
-
-    left: 47%;
-
-    top: 48%;
-
-}
-
-
-.mid-lane .plus {
-
-    border: 3px solid #48aaff;
-
-    color: #48aaff;
-
-    box-shadow:
-        0 0 12px rgba(72, 170, 255, 0.65);
-
-}
-
-
-.mid-lane .role-label {
-
-    color: #48aaff;
-
-}
-
-
-.mid-lane .role-info {
-
-    left: -65px;
-
-    top: -225px;
-
-    border: 2px solid #48aaff;
-
-}
-
-
-.mid-lane .role-info h2 {
-
-    color: #48aaff;
-
-}
-
-
-/* =========================================
-   JUNGLER
-   Slightly higher
-   Around red-buff/jungle area
-========================================= */
-
-.jungler {
-
-    left: 59%;
-
-    top: 64%;
-
-}
-
-
-.jungler .plus {
-
-    border: 3px solid #62df55;
-
-    color: #62df55;
-
-    box-shadow:
-        0 0 12px rgba(98, 223, 85, 0.65);
-
-}
-
-
-.jungler .role-label {
-
-    color: #62df55;
-
-}
-
-
-.jungler .role-info {
-
-    left: -70px;
-
-    top: -225px;
-
-    border: 2px solid #62df55;
-
-}
-
-
-.jungler .role-info h2 {
-
-    color: #62df55;
-
-}
-
-
-/* =========================================
+/* =====================================================
    ROAMER
-   Lower-left
+
    Closer to Gold Lane
-========================================= */
+===================================================== */
 
 .roamer {
-
-    left: 25%;
-
-    top: 69%;
-
-}
-
-
-.roamer .plus {
-
-    border: 3px solid #a855ff;
-
-    color: #a855ff;
-
-    box-shadow:
-        0 0 12px rgba(168, 85, 255, 0.65);
-
-}
-
-
-.roamer .role-label {
-
-    color: #a855ff;
-
+    top: 30%;
+    left: 28%;
 }
 
 
 .roamer .role-info {
-
-    left: -80px;
-
-    top: -210px;
-
-    border: 2px solid #a855ff;
-
+    left: 60px;
+    top: -20px;
 }
 
 
-.roamer .role-info h2 {
 
-    color: #a855ff;
+/* =====================================================
+   MID LANE
 
+   Centre
+===================================================== */
+
+.mid-lane {
+    top: 47%;
+    left: 48%;
 }
 
 
-/* =========================================
+.mid-lane .role-info {
+    left: 60px;
+    top: -20px;
+}
+
+
+
+/* =====================================================
+   JUNGLER
+
+   Near Red Buff
+===================================================== */
+
+.jungler {
+    top: 62%;
+    left: 65%;
+}
+
+
+.jungler .role-info {
+    right: 60px;
+    top: -20px;
+}
+
+
+
+/* =====================================================
    EXP LANE
+
    Lower-right
-========================================= */
+===================================================== */
 
 .exp-lane {
-
-    right: 13%;
-
-    top: 70%;
-
-}
-
-
-.exp-lane .plus {
-
-    border: 3px solid #ff4d3d;
-
-    color: #ff4d3d;
-
-    box-shadow:
-        0 0 12px rgba(255, 77, 61, 0.65);
-
-}
-
-
-.exp-lane .role-label {
-
-    color: #ff4d3d;
-
+    bottom: 18%;
+    right: 17%;
 }
 
 
 .exp-lane .role-info {
-
-    right: 75px;
-
-    top: -210px;
-
-    border: 2px solid #ff4d3d;
-
+    right: 60px;
+    top: -20px;
 }
 
-
-.exp-lane .role-info h2 {
-
-    color: #ff4d3d;
-
-}
-
-
-/* =========================================
-   LEGEND
-========================================= */
-
-.legend {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 35px;
-
-    padding: 20px;
-
-    background: rgba(4, 5, 22, 0.9);
-
-    border-left: 2px solid #171d48;
-
-    border-right: 2px solid #171d48;
-
-    border-bottom: 2px solid #171d48;
-
-}
-
-
-.legend-item {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color: #c6c4d5;
-
-    font-size: 12px;
-
-}
-
-
-.legend-dot {
-
-    width: 14px;
-
-    height: 14px;
-
-    border-radius: 2px;
-
-}
-
-
-/* Purple */
-
-.roamer-dot {
-
-    background: #a855ff;
-
-    box-shadow: 0 0 8px #a855ff;
-
-}
-
-
-/* Gold */
-
-.gold-dot {
-
-    background: #e7b629;
-
-    box-shadow: 0 0 8px #e7b629;
-
-}
-
-
-/* Red */
-
-.exp-dot {
-
-    background: #ff4d3d;
-
-    box-shadow: 0 0 8px #ff4d3d;
-
-}
-
-
-/* Blue */
-
-.mid-dot {
-
-    background: #48aaff;
-
-    box-shadow: 0 0 8px #48aaff;
-
-}
-
-
-/* Green */
-
-.jungle-dot {
-
-    background: #62df55;
-
-    box-shadow: 0 0 8px #62df55;
-
-}
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 800px) {
-
-    .hero {
-
-        padding-left: 5%;
-
-    }
-
-    .hero-text h1 {
-
-        font-size: 32px;
-
-    }
-
-    .battlefield-heading h1 {
-
-        font-size: 30px;
-
-    }
-
-    .map-container {
-
-        aspect-ratio: 1 / 1;
-
-    }
-
-    .plus {
-
-        width: 42px;
-
-        height: 42px;
-
-        font-size: 22px;
-
-    }
-
-    .role-label {
-
-        font-size: 9px;
-
-    }
-
-    .role-info {
-
-        width: 200px;
-
-    }
-
-}
 
 
 /* =====================================================
-   LEGEND
+   MAP HOVER
 ===================================================== */
 
-.legend {
+.role-marker:hover .role-info {
+    opacity: 1;
 
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    margin-top: 15px;
-
-    flex-wrap: wrap;
-
-}
-
-.legend-item {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: #aaa;
-
-    font-size: 12px;
-
-}
-
-.legend-item span {
-
-    width: 9px;
-
-    height: 9px;
-
-    border-radius: 50%;
-
-}
-
-.legend-item.gold span {
-    background: #ffbd22;
-}
-
-.legend-item.roam span {
-    background: #a75cff;
-}
-
-.legend-item.mid span {
-    background: #5ab9ff;
-}
-
-.legend-item.jungle span {
-    background: #67df57;
-}
-
-.legend-item.exp span {
-    background: #ff5c5c;
+    visibility: visible;
 }
 
 
 
 /* =====================================================
-   ROLE GUIDE SECTION
+   ROLE GUIDE SLIDER
 ===================================================== */
 
 .role-guides {
-
-    width: 90%;
-
-    max-width: 1100px;
-
-    margin: 120px auto;
-
+    width: 80%;
+    max-width: 1080px;
+    margin: 100px auto;
+    color: white;
 }
 
-.section-heading p {
 
-    color: #a75cff;
+/* =====================================================
+   HEADER
+===================================================== */
 
+.role-guide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    color: #a855f7;
+    font-size: 14px;
     letter-spacing: 2px;
-
-    margin-bottom: 5px;
-
+    margin: 0 0 8px 0;
 }
 
-.section-heading h1 {
+.role-guide-header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
 
-    font-size: 32px;
 
-    margin-top: 0;
+/* =====================================================
+   SLIDER ARROWS
+===================================================== */
 
+.slider-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-buttons button {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(255,255,255,0.06);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+    background: rgba(255,255,255,0.15);
+
+    transform: scale(1.05);
 }
 
 
@@ -928,219 +499,297 @@ body {
 ===================================================== */
 
 .role-tabs {
-
     display: flex;
-
     gap: 10px;
-
-    margin: 30px 0;
-
-    flex-wrap: wrap;
-
+    margin-bottom: 32px;
 }
 
 .role-tab {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 
-    padding: 12px 25px;
+    padding: 12px 22px;
 
     border-radius: 25px;
 
-    border: 1px solid #38344d;
+    border: 1px solid rgba(255,255,255,0.12);
 
-    background: #19182d;
+    background: rgba(255,255,255,0.06);
 
     color: #aaa;
 
+    font-size: 14px;
+
     cursor: pointer;
 
+    transition: 0.3s;
 }
 
 .role-tab:hover {
-
-    color: white;
-
+    background: rgba(255,255,255,0.1);
 }
 
 .role-tab.active {
-
-    background: #a8782d;
+    background: #b78532;
 
     color: white;
 
-    border-color: #e5a632;
+    border-color: #d79a35;
 
+    box-shadow:
+        0 0 20px rgba(215,154,53,0.25);
+}
+
+.tab-icon {
+    font-size: 20px;
 }
 
 
 /* =====================================================
-   SLIDER
+   SLIDER CONTAINER
 ===================================================== */
 
-.slider-wrapper {
+.slider-container {
+    width: 100%;
 
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(10,8,25,0.8);
+}
+
+
+/* =====================================================
+   SLIDES
+===================================================== */
+
+.slides {
+    display: flex;
+
+    width: 100%;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.slide {
+    min-width: 100%;
+
+    height: 370px;
+
+    display: flex;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.slide-content {
+    width: 75%;
+
+    padding: 36px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   ROLE HEADING
+===================================================== */
+
+.role-heading {
     display: flex;
 
     align-items: center;
 
     gap: 15px;
-
 }
 
-.slider-window {
-
-    overflow: hidden;
-
-    width: 100%;
-
-    border-radius: 18px;
-
-}
-
-.slides {
-
-    display: flex;
-
-    transition: transform 0.6s ease;
-
-}
-
-.role-slide {
-
-    min-width: 100%;
-
-    min-height: 360px;
-
-    display: flex;
-
-    border: 1px solid #3d3853;
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    background: #0d0c20;
-
-}
-
-
-/* =====================================================
-   SLIDE CONTENT
-===================================================== */
-
-.slide-content {
-
-    width: 70%;
-
-    padding: 35px;
-
-}
 
 .role-icon {
-
-    width: 62px;
-
-    height: 62px;
+    width: 60px;
+    height: 60px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
-    border: 2px solid #a75cff;
+    border-radius: 16px;
 
-    border-radius: 15px;
+    font-size: 25px;
 
-    font-size: 28px;
-
-    color: #a75cff;
-
+    border: 2px solid;
 }
 
-.slide-content h2 {
 
-    font-size: 28px;
+/* Roamer */
 
-    margin-bottom: 5px;
+.roamer-icon {
+    color: #a855f7;
 
+    border-color: #a855f7;
+
+    box-shadow:
+        0 0 20px rgba(168,85,247,0.25);
 }
 
-.slide-content h3 {
 
-    color: #a75cff;
+/* Gold */
 
-    margin-top: 0;
+.gold-icon {
+    color: #d99a2b;
 
+    border-color: #d99a2b;
+
+    box-shadow:
+        0 0 20px rgba(217,154,43,0.25);
 }
 
-.slide-content p {
 
-    color: #ddd;
+/* EXP */
 
-    line-height: 1.6;
+.exp-icon {
+    color: #e25b57;
 
+    border-color: #e25b57;
 }
 
-.tags {
 
-    display: flex;
+/* Jungle */
 
-    gap: 10px;
+.jungle-icon {
+    color: #69c957;
 
-    margin: 25px 0;
-
+    border-color: #69c957;
 }
 
-.tags span {
 
-    padding: 7px 14px;
+/* Mid */
 
-    border: 1px solid #514a67;
+.mid-icon {
+    color: #63b8dd;
 
-    border-radius: 20px;
-
-    background: #1a182b;
-
+    border-color: #63b8dd;
 }
 
-.slide-content h4 {
 
-    color: #888;
+.role-heading h2 {
+    margin: 0;
 
-    letter-spacing: 2px;
-
+    font-size: 25px;
 }
 
-.heroes {
 
-    display: flex;
+.role-heading span {
+    display: block;
 
-    gap: 10px;
+    margin-top: 5px;
 
-    flex-wrap: wrap;
+    color: #d69bff;
 
+    font-size: 16px;
 }
 
-.heroes span {
 
-    padding: 8px 15px;
+/* Gold text */
 
-    border-radius: 8px;
-
-    background: #252338;
-
+.slide:nth-child(2) .role-heading span {
+    color: #d99a2b;
 }
 
 
 /* =====================================================
-   VIDEO
+   DESCRIPTION
+===================================================== */
+
+.role-description {
+    margin-top: 25px;
+
+    max-width: 750px;
+
+    color: #d7d7e5;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   ROLE TAGS
+===================================================== */
+
+.role-tags {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 24px;
+}
+
+.role-tags span {
+    padding: 7px 14px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(255,255,255,0.06);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   POPULAR HEROES
+===================================================== */
+
+.popular-title {
+    margin-top: 27px;
+
+    color: #77748d;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.heroes {
+    display: flex;
+
+    gap: 10px;
+}
+
+.heroes span {
+    padding: 7px 13px;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   VIDEO SECTION
 ===================================================== */
 
 .video-section {
+    width: 25%;
 
-    width: 30%;
-
-    border-left: 1px solid #302c43;
+    border-left: 1px solid rgba(255,255,255,0.1);
 
     display: flex;
 
@@ -1151,112 +800,142 @@ body {
     justify-content: center;
 
     text-align: center;
-
 }
 
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
 .play-button {
-
     width: 90px;
-
     height: 90px;
 
     border-radius: 50%;
 
-    border: 3px solid #e5a632;
-
     background: transparent;
+
+    border: 3px solid #d79a35;
 
     color: white;
 
-    font-size: 35px;
+    font-size: 28px;
 
     cursor: pointer;
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 25px rgba(215,154,53,0.15);
 }
 
 .play-button:hover {
+    transform: scale(1.08);
 
-    background: #e5a632;
+    background: rgba(215,154,53,0.1);
 
-    transform: scale(1.05);
+    box-shadow:
+        0 0 35px rgba(215,154,53,0.3);
+}
 
+
+.video-section h3 {
+    margin-top: 20px;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
 }
 
 .video-section p {
+    margin: 0;
 
-    color: #888;
+    color: #77748d;
 
+    font-size: 13px;
 }
 
 
 /* =====================================================
-   SLIDER BUTTONS
+   SLIDER DOTS
 ===================================================== */
 
-.slider-button {
-
-    min-width: 45px;
-
-    height: 45px;
-
-    border-radius: 50%;
-
-    border: 1px solid #454158;
-
-    background: #1b192c;
-
-    color: white;
-
-    font-size: 30px;
-
-    cursor: pointer;
-
-}
-
-.slider-button:hover {
-
-    background: #a75cff;
-
-}
-
-
-/* =====================================================
-   DOTS
-===================================================== */
-
-.dots {
-
+.slider-dots {
     display: flex;
 
     justify-content: center;
 
-    gap: 8px;
+    align-items: center;
 
-    margin-top: 20px;
+    gap: 9px;
 
+    margin-top: 18px;
 }
 
 .dot {
-
-    width: 9px;
-
-    height: 9px;
-
-    background: #444;
+    width: 8px;
+    height: 8px;
 
     border-radius: 50%;
 
+    background: #454453;
+
     cursor: pointer;
 
+    transition: 0.3s;
 }
 
 .dot.active {
-
     width: 28px;
 
     border-radius: 10px;
 
-    background: #e5a632;
+    background: #d79a35;
+
+    box-shadow:
+        0 0 10px rgba(215,154,53,0.5);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .role-guides {
+        width: 90%;
+    }
+
+    .role-tabs {
+        flex-wrap: wrap;
+    }
+
+    .slide {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+    .slide-content {
+        width: 100%;
+    }
+
+    .video-section {
+        width: 100%;
+
+        min-height: 180px;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
 
 }
 
@@ -1266,53 +945,149 @@ body {
 ===================================================== */
 
 .game-modes {
+    padding: 90px 20px;
 
-    width: 90%;
+    background: #08091c;
 
-    max-width: 1100px;
+    color: white;
 
-    margin: 120px auto;
-
+    text-align: left;
 }
 
 
 /* =====================================================
-   MODE CARDS
+   GAME MODE HEADER
+===================================================== */
+
+.game-mode-header {
+    width: 90%;
+
+    max-width: 1080px;
+
+    margin: 0 auto 38px auto;
+}
+
+
+.game-mode-label {
+    margin: 0 0 10px 0;
+
+    color: #a855f7;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+
+.game-mode-header h1 {
+    margin: 0 0 10px 0;
+
+    font-size: 30px;
+
+    letter-spacing: 1px;
+}
+
+
+.game-mode-subtitle {
+    margin: 0;
+
+    color: #8f9bbd;
+
+    font-size: 16px;
+}
+
+
+
+/* =====================================================
+   MODE CONTAINER
 ===================================================== */
 
 .mode-container {
+    width: 90%;
 
-    display: grid;
+    max-width: 1080px;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    margin: 0 auto;
 
-    gap: 25px;
+    display: flex;
 
-    margin-top: 35px;
+    justify-content: center;
 
+    gap: 28px;
 }
 
+
+
+/* =====================================================
+   MODE CARD
+===================================================== */
+
 .mode-card {
+    width: 33.333%;
 
     height: 430px;
 
     perspective: 1000px;
-
 }
 
-.mode-front,
-.mode-back {
+
+.mode-inner {
+    position: relative;
 
     width: 100%;
 
     height: 100%;
 
-    padding: 28px;
+    transition:
+        transform 0.7s ease;
 
-    border-radius: 18px;
+    transform-style: preserve-3d;
+}
 
-    border: 1px solid #3d3853;
+
+/*
+   Flip the card when the user
+   hovers over it.
+*/
+
+.mode-card:hover .mode-inner {
+    transform: rotateY(180deg);
+}
+
+
+
+/* =====================================================
+   FRONT + BACK
+===================================================== */
+
+.mode-front,
+.mode-back {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 17px;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    -webkit-backface-visibility: hidden;
+
+    box-sizing: border-box;
+}
+
+
+
+/* =====================================================
+   CARD FRONT
+===================================================== */
+
+.mode-front {
 
     display: flex;
 
@@ -1324,260 +1099,428 @@ body {
 
     text-align: center;
 
-    transition: transform 0.7s;
+    padding: 30px;
 
-    backface-visibility: hidden;
+    border: 2px solid;
 
-}
-
-.mode-card {
-
-    position: relative;
-
-}
-
-.mode-front {
-
-    position: absolute;
-
-    background: #0e0d20;
-
-}
-
-.mode-back {
-
-    position: absolute;
-
-    background: #16142a;
-
-    transform: rotateY(180deg);
-
-}
-
-.mode-card:hover .mode-front {
-
-    transform: rotateY(180deg);
-
-}
-
-.mode-card:hover .mode-back {
-
-    transform: rotateY(360deg);
-
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35);
 }
 
 
-/* CLASSIC */
+/* =====================================================
+   CLASSIC CARD
+===================================================== */
 
-.mode-icon {
-
-    font-size: 55px;
-
-    color: #6e91ff;
-
-}
-
-.mode-front h2 {
-
-    font-size: 30px;
-
-}
-
-.mode-front h3 {
-
-    color: #8aa5ff;
-
-}
-
-
-/* RANKED */
-
-.mode-front.ranked {
+.classic-card .mode-front {
 
     background:
         linear-gradient(
-            145deg,
-            #88491c,
-            #45291c
+            160deg,
+            #3e52c9,
+            #2538a5 55%,
+            #101733
         );
 
-}
-
-.mode-front.ranked h2 {
-
-    color: white;
-
-}
-
-.large-icon {
-
-    font-size: 55px;
-
-    margin-bottom: 15px;
-
+    border-color: #5271e9;
 }
 
 
-/* BRAWL */
-
-.mode-front.brawl {
+.classic-card .mode-back {
 
     background:
         linear-gradient(
-            145deg,
-            #6430c1,
-            #301867
+            160deg,
+            #2538a5,
+            #111630
         );
 
+    border-color: #5271e9;
 }
 
 
-/* BADGE */
+/* =====================================================
+   RANKED CARD
+===================================================== */
+
+.ranked-card .mode-front {
+
+    background:
+        linear-gradient(
+            160deg,
+            #9b531e,
+            #814319 55%,
+            #211717
+        );
+
+    border-color: #c27b2b;
+}
+
+
+.ranked-card .mode-back {
+
+    background:
+        linear-gradient(
+            160deg,
+            #814319,
+            #261817
+        );
+
+    border-color: #c27b2b;
+}
+
+
+/* =====================================================
+   BRAWL CARD
+===================================================== */
+
+.brawl-card .mode-front {
+
+    background:
+        linear-gradient(
+            160deg,
+            #6333c2,
+            #5226a8 55%,
+            #1b1630
+        );
+
+    border-color: #824be4;
+}
+
+
+.brawl-card .mode-back {
+
+    background:
+        linear-gradient(
+            160deg,
+            #5226a8,
+            #1d1631
+        );
+
+    border-color: #824be4;
+}
+
+
+
+/* =====================================================
+   TOP BADGE
+===================================================== */
 
 .mode-badge {
 
     position: absolute;
 
-    top: 25px;
+    top: 23px;
 
-    right: 25px;
+    right: 22px;
 
-    padding: 7px 14px;
-
-    border: 1px solid #a57935;
+    padding: 6px 13px;
 
     border-radius: 20px;
 
-    color: #e5b449;
-
     font-size: 12px;
 
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: rgba(255,255,255,0.55);
 }
 
 
-/* MODE BACK */
+.classic-card .mode-badge {
+    border-color: rgba(140,170,255,0.45);
+}
+
+
+.ranked-card .mode-badge {
+    border-color: rgba(240,190,70,0.5);
+
+    color: #e9bf55;
+}
+
+
+.brawl-card .mode-badge {
+    border-color: rgba(190,140,255,0.5);
+}
+
+
+
+/* =====================================================
+   MODE ICON
+===================================================== */
+
+.mode-icon {
+
+    font-size: 62px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.classic-card .mode-icon {
+    color: #83a5ff;
+
+    text-shadow:
+        0 0 20px rgba(100,140,255,0.5);
+}
+
+
+.ranked-card .mode-icon {
+    color: #e5b94b;
+
+    text-shadow:
+        0 0 20px rgba(230,180,60,0.5);
+}
+
+
+.brawl-card .mode-icon {
+    color: #bd8cff;
+
+    text-shadow:
+        0 0 20px rgba(170,100,255,0.5);
+}
+
+
+
+/* =====================================================
+   MODE TITLE
+===================================================== */
+
+.mode-front h2 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+}
+
+
+
+/* =====================================================
+   MODE SUBTITLE
+===================================================== */
+
+.mode-front > p {
+
+    margin-top: 14px;
+
+    margin-bottom: 0;
+
+    font-size: 16px;
+}
+
+
+.classic-card .mode-front > p {
+    color: #7797ed;
+}
+
+
+.ranked-card .mode-front > p {
+    color: #e0b44d;
+}
+
+
+.brawl-card .mode-front > p {
+    color: #b486e9;
+}
+
+
+
+/* =====================================================
+   HOVER TO FLIP
+===================================================== */
+
+.flip-text {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.4);
+
+    font-size: 13px;
+}
+
+
+
+/* =====================================================
+   CARD BACK
+===================================================== */
 
 .mode-back {
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
 
     align-items: flex-start;
 
     text-align: left;
 
+    transform: rotateY(180deg);
 }
+
 
 .mode-back h2 {
 
-    width: 100%;
+    margin: 0 0 20px 0;
 
-    text-align: center;
+    font-size: 28px;
 
+    letter-spacing: 2px;
 }
+
 
 .mode-back p {
 
-    color: #ccc;
+    margin: 0 0 16px 0;
+
+    color: #d8d8e8;
+
+    font-size: 15px;
 
     line-height: 1.6;
-
 }
 
-.mode-details {
 
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-
-    width: 100%;
-
-    margin: 15px 0;
-
-}
-
-.mode-details div {
-
-    padding: 12px;
-
-    border-radius: 10px;
-
-    background: #1d1b2d;
-
-}
-
-.mode-details span {
-
-    display: block;
-
-    color: #777;
-
-    font-size: 12px;
-
-}
-
-.mode-details strong {
-
-    display: block;
-
-    margin-top: 5px;
-
-}
 
 
 /* =====================================================
-   RESPONSIVE
+   RESPONSIVE DESIGN
 ===================================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     .hero-text h1 {
-
-        font-size: 38px;
-
+        font-size: 40px;
     }
 
-    .battlefield,
-    .role-guides,
-    .game-modes {
 
-        width: 94%;
-
+    .hero-text h2 {
+        font-size: 22px;
     }
+
+
+    .battlefield h1,
+    .role-guides h1,
+    .game-modes h1 {
+        font-size: 35px;
+    }
+
 
     .role-info {
-
-        width: 210px;
-
+        width: 220px;
     }
 
-    .role-slide {
+
+    .mode-card {
+        width: 280px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .role-tabs {
+        gap: 5px;
+    }
+
+
+    .role-tab {
+        padding: 10px 14px;
+
+        font-size: 13px;
+    }
+
+
+    .slide {
+        min-height: 300px;
+    }
+
+
+    .slide h2 {
+        font-size: 28px;
+    }
+
+
+    .mode-card {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+}
+@media (max-width: 900px) {
+
+    .mode-container {
+        flex-wrap: wrap;
+    }
+
+
+    .mode-card {
+        width: 45%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .game-modes {
+        padding: 60px 15px;
+    }
+
+
+    .game-mode-header {
+        width: 100%;
+    }
+
+
+    .mode-container {
+        width: 100%;
 
         flex-direction: column;
 
+        align-items: center;
     }
 
-    .slide-content {
 
+    .mode-card {
         width: 100%;
 
-    }
+        max-width: 360px;
 
-    .video-section {
-
-        width: 100%;
-
-        min-height: 180px;
-
-        border-left: none;
-
-        border-top: 1px solid #302c43;
-
-    }
-
-    .mode-container {
-
-        grid-template-columns: 1fr;
-
+        height: 400px;
     }
 
 }

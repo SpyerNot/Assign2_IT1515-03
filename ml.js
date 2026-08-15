@@ -16,7 +16,7 @@ roleMarkers.forEach(function(role) {
 
 
     /* ---------------------------------------------
-       SHOW INFORMATION
+       SHOW INFORMATION WHEN HOVERING
     --------------------------------------------- */
 
     role.addEventListener("mouseenter", function() {
@@ -24,6 +24,8 @@ roleMarkers.forEach(function(role) {
         information.style.opacity = "1";
 
         information.style.visibility = "visible";
+
+        role.style.zIndex = "100";
 
     });
 
@@ -38,6 +40,8 @@ roleMarkers.forEach(function(role) {
 
         information.style.visibility = "hidden";
 
+        role.style.zIndex = "";
+
     });
 
 
@@ -45,7 +49,10 @@ roleMarkers.forEach(function(role) {
        CLICK PLUS BUTTON
     --------------------------------------------- */
 
-    plusButton.addEventListener("click", function() {
+    plusButton.addEventListener("click", function(event) {
+
+        event.stopPropagation();
+
 
         if (
             information.style.visibility === "visible"
@@ -62,6 +69,8 @@ roleMarkers.forEach(function(role) {
             information.style.opacity = "1";
 
             information.style.visibility = "visible";
+
+            role.style.zIndex = "100";
 
         }
 
@@ -91,6 +100,16 @@ const prevBtn =
     document.getElementById("prevBtn");
 
 
+/*
+   Start on Gold Lane
+
+   0 = Roamer
+   1 = Gold Lane
+   2 = EXP Lane
+   3 = Jungler
+   4 = Mid Lane
+*/
+
 let currentSlide = 1;
 
 const totalSlides =
@@ -104,20 +123,12 @@ const totalSlides =
 
 function showSlide(index) {
 
-
-    /* Make sure index stays within range */
-
     if (index >= totalSlides) {
-
         index = 0;
-
     }
 
-
     if (index < 0) {
-
         index = totalSlides - 1;
-
     }
 
 
@@ -130,7 +141,7 @@ function showSlide(index) {
         `translateX(-${currentSlide * 100}%)`;
 
 
-    /* Update tabs */
+    /* Update role tabs */
 
     roleTabs.forEach(function(tab) {
 
@@ -163,13 +174,16 @@ function showSlide(index) {
    NEXT BUTTON
 ===================================================== */
 
-nextBtn.addEventListener("click", function() {
+nextBtn.addEventListener(
+    "click",
+    function() {
 
-    showSlide(currentSlide + 1);
+        showSlide(currentSlide + 1);
 
-    resetAutoSlide();
+        resetAutoSlide();
 
-});
+    }
+);
 
 
 
@@ -177,13 +191,16 @@ nextBtn.addEventListener("click", function() {
    PREVIOUS BUTTON
 ===================================================== */
 
-prevBtn.addEventListener("click", function() {
+prevBtn.addEventListener(
+    "click",
+    function() {
 
-    showSlide(currentSlide - 1);
+        showSlide(currentSlide - 1);
 
-    resetAutoSlide();
+        resetAutoSlide();
 
-});
+    }
+);
 
 
 
@@ -191,20 +208,28 @@ prevBtn.addEventListener("click", function() {
    ROLE TAB BUTTONS
 ===================================================== */
 
-roleTabs.forEach(function(tab) {
+roleTabs.forEach(
+    function(tab) {
 
-    tab.addEventListener("click", function() {
+        tab.addEventListener(
+            "click",
+            function() {
 
-        const slideNumber =
-            Number(tab.dataset.slide);
+                const slideNumber =
+                    Number(
+                        tab.dataset.slide
+                    );
 
-        showSlide(slideNumber);
 
-        resetAutoSlide();
+                showSlide(slideNumber);
 
-    });
+                resetAutoSlide();
 
-});
+            }
+        );
+
+    }
+);
 
 
 
@@ -212,20 +237,28 @@ roleTabs.forEach(function(tab) {
    DOT BUTTONS
 ===================================================== */
 
-dots.forEach(function(dot) {
+dots.forEach(
+    function(dot) {
 
-    dot.addEventListener("click", function() {
+        dot.addEventListener(
+            "click",
+            function() {
 
-        const slideNumber =
-            Number(dot.dataset.slide);
+                const slideNumber =
+                    Number(
+                        dot.dataset.slide
+                    );
 
-        showSlide(slideNumber);
 
-        resetAutoSlide();
+                showSlide(slideNumber);
 
-    });
+                resetAutoSlide();
 
-});
+            }
+        );
+
+    }
+);
 
 
 
@@ -234,11 +267,16 @@ dots.forEach(function(dot) {
 ===================================================== */
 
 let autoSlide =
-    setInterval(function() {
+    setInterval(
+        function() {
 
-        showSlide(currentSlide + 1);
+            showSlide(
+                currentSlide + 1
+            );
 
-    }, 5000);
+        },
+        5000
+    );
 
 
 
@@ -252,11 +290,16 @@ function resetAutoSlide() {
 
 
     autoSlide =
-        setInterval(function() {
+        setInterval(
+            function() {
 
-            showSlide(currentSlide + 1);
+                showSlide(
+                    currentSlide + 1
+                );
 
-        }, 5000);
+            },
+            5000
+        );
 
 }
 
@@ -267,22 +310,36 @@ function resetAutoSlide() {
 ===================================================== */
 
 const videoButtons =
-    document.querySelectorAll(".play-button");
+    document.querySelectorAll(
+        ".play-button"
+    );
 
 
-videoButtons.forEach(function(button) {
+videoButtons.forEach(
+    function(button) {
 
-    button.addEventListener("click", function() {
+        button.addEventListener(
+            "click",
+            function() {
 
-        const videoLink =
-            button.dataset.video;
+                const videoLink =
+                    button.dataset.video;
 
 
-        window.open(
-            videoLink,
-            "_blank"
+                window.open(
+                    videoLink,
+                    "_blank"
+                );
+
+            }
         );
 
-    });
+    }
+);
 
-});
+
+/* =====================================================
+   INITIAL SLIDE
+===================================================== */
+
+showSlide(currentSlide);
